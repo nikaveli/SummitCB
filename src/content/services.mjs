@@ -1,7 +1,8 @@
 export const services = [
   {
     id: 'additions', name: 'Home Additions', path: '/home-additions/',
-    title: 'Home Additions in Denver Metro | Summit Custom Builders',
+    title: 'Denver Home Additions | Summit Custom Builders',
+    heading: 'Denver Home Additions',
     description: 'Make room for your next chapter with a thoughtfully planned home addition. Explore feasibility, budgets, and construction with Summit Custom Builders.',
     intro: 'More room. The same place you love. An addition can give your family the space it needs while keeping the neighborhood, routines, and connections that make your house home.',
     summary: 'Room to grow, thoughtfully connected to your existing home.',
@@ -22,7 +23,8 @@ export const services = [
   },
   {
     id: 'remodeling', name: 'Home Remodeling & Home Improvement', path: '/custom-home-remodeling-contractor/',
-    title: 'Home Remodeling in Denver Metro | Summit Custom Builders',
+    title: 'Whole-Home Remodeling in Denver | Summit Custom Builders',
+    heading: 'Whole-Home Remodeling in Denver',
     description: 'Plan a whole-home renovation, better layout, or coordinated home improvements with Summit Custom Builders serving Denver and the surrounding communities.',
     intro: 'Make the home you have work better for the life you live. A coordinated remodel brings rooms, systems, and everyday routines into one considered plan.',
     summary: 'A better layout and a cohesive plan for the home you already have.',
@@ -43,7 +45,8 @@ export const services = [
   },
   {
     id: 'kitchen', name: 'Kitchen Remodeling', path: '/kitchen-home-remodeling-contractor/',
-    title: 'Kitchen Remodeling in Denver Metro | Summit Custom Builders',
+    title: 'Denver Kitchen Remodeling | Summit Custom Builders',
+    heading: 'Denver Kitchen Remodeling',
     description: 'Create a kitchen that fits your daily life. Plan layout, cabinets, lighting, and construction with Summit Custom Builders in Denver Metro.',
     intro: 'A kitchen should make the everyday easier. Start with how you cook, gather, and move through the room, then build the layout and finishes around those habits.',
     summary: 'Practical layouts, thoughtful storage, and a kitchen made for daily life.',
@@ -63,7 +66,8 @@ export const services = [
   },
   {
     id: 'bathroom', name: 'Bathroom Remodeling', path: '/bathroom-remodeling/',
-    title: 'Bathroom Remodeling in Denver Metro | Summit Custom Builders',
+    title: 'Denver Bathroom Remodeling | Summit Custom Builders',
+    heading: 'Denver Bathroom Remodeling',
     description: 'Plan a bathroom renovation with better function, considered materials, and coordinated construction. Serving Denver, Arvada, Lakewood, and nearby cities.',
     intro: 'A bathroom can feel better and work better at the same time. Bring comfort, storage, and easier everyday use into a plan built around your home.',
     summary: 'Comfortable, functional bathrooms with careful attention beneath the finishes.',
@@ -83,7 +87,8 @@ export const services = [
   },
   {
     id: 'contractor', name: 'General Contractor', path: '/general-contractor-denver-co/',
-    title: 'General Contractor in Denver Metro | Summit Custom Builders',
+    title: 'Denver General Contractor | Summit Custom Builders',
+    heading: 'Denver General Contractor',
     description: 'Coordinate your remodel or addition with Summit Custom Builders. Clear scope, trade scheduling, construction oversight, and communication in Denver Metro.',
     intro: 'A well-managed project connects the plans, people, materials, and decisions. Your general contractor brings those moving parts into a coordinated construction process.',
     summary: 'The coordination and communication that keep a complex project moving.',
@@ -103,7 +108,8 @@ export const services = [
   },
   {
     id: 'aging', name: 'Aging in Place Renovations', path: '/ada-remodeling/',
-    title: 'Aging in Place Remodeling | Denver Metro | Summit',
+    title: 'Denver Aging-in-Place Remodeling | Summit Custom Builders',
+    heading: 'Denver Aging-in-Place Remodeling',
     description: 'Adapt kitchens, bathrooms, and everyday routes to changing needs. Explore aging-in-place renovations with Summit Custom Builders in Denver Metro.',
     intro: 'Keep the home and community you love, with spaces that support you as life changes. Thoughtful improvements can make everyday routines more comfortable and manageable.',
     summary: 'Thoughtful changes that support comfort, access, and independence.',

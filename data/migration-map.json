@@ -1,0 +1,764 @@
+[
+  {
+    "from": "/",
+    "status": 200,
+    "to": "/",
+    "reason": "Existing page retained at original URL."
+  },
+  {
+    "from": "/blog-2/",
+    "status": 301,
+    "to": "/blog/",
+    "reason": "Duplicate navigation/archive consolidated."
+  },
+  {
+    "from": "/general-contractor-denver-co/",
+    "status": 200,
+    "to": "/general-contractor-denver-co/",
+    "reason": "Existing page retained at original URL."
+  },
+  {
+    "from": "/kitchen-home-remodeling-contractor/",
+    "status": 200,
+    "to": "/kitchen-home-remodeling-contractor/",
+    "reason": "Existing page retained at original URL."
+  },
+  {
+    "from": "/ada-remodeling/",
+    "status": 200,
+    "to": "/ada-remodeling/",
+    "reason": "Existing page retained at original URL."
+  },
+  {
+    "from": "/bathroom-remodeling/",
+    "status": 200,
+    "to": "/bathroom-remodeling/",
+    "reason": "Existing page retained at original URL."
+  },
+  {
+    "from": "/custom-home-remodeling-contractor/",
+    "status": 200,
+    "to": "/custom-home-remodeling-contractor/",
+    "reason": "Existing page retained at original URL."
+  },
+  {
+    "from": "/home-additions/",
+    "status": 200,
+    "to": "/home-additions/",
+    "reason": "Existing page retained at original URL."
+  },
+  {
+    "from": "/bathroom-remodeling-bathroom-renovations-golden-co/small-bathroom-renovation-golden-colorado/",
+    "status": 301,
+    "to": "/bathroom-remodeling/",
+    "reason": "Empty WordPress media attachment page consolidated into its relevant content or replacement asset."
+  },
+  {
+    "from": "/construction-company-in-arvada-lakewood-co-denver-wheat-ridge-and-nearby-cities/",
+    "status": 200,
+    "to": "/construction-company-in-arvada-lakewood-co-denver-wheat-ridge-and-nearby-cities/",
+    "reason": "Article retained and refreshed at original URL."
+  },
+  {
+    "from": "/construction-company-in-arvada-lakewood-co-denver-wheat-ridge-and-nearby-cities/home-addition-banner/",
+    "status": 301,
+    "to": "/construction-company-in-arvada-lakewood-co-denver-wheat-ridge-and-nearby-cities/",
+    "reason": "Empty WordPress media attachment page consolidated into its relevant content or replacement asset."
+  },
+  {
+    "from": "/home-remodeling-in-golden-co-morrison-co-denver-lakewood-co-and-surrounding-areas/",
+    "status": 301,
+    "to": "/home-remodeling-in-arvada-denver-golden-lakewood-morrison-and-wheat-ridge-co/",
+    "reason": "Repetitive legacy article consolidated into the corresponding updated planning topic; original text retained in data/legacy-crawl.json."
+  },
+  {
+    "from": "/home-addition-arvada-co/home-additions-arvada/",
+    "status": 301,
+    "to": "/home-addition-arvada-co/",
+    "reason": "Empty WordPress media attachment page consolidated into its relevant content or replacement asset."
+  },
+  {
+    "from": "/construction-company-in-golden-denver-lakewood-morrison-wheat-ridge-and-nearby-cities/",
+    "status": 301,
+    "to": "/construction-company-in-arvada-lakewood-co-denver-wheat-ridge-and-nearby-cities/",
+    "reason": "Repetitive legacy article consolidated into the corresponding updated planning topic; original text retained in data/legacy-crawl.json."
+  },
+  {
+    "from": "/home-additions/summit-custom-builders-additions-bg/",
+    "status": 301,
+    "to": "/home-additions/",
+    "reason": "Empty WordPress media attachment page consolidated into its relevant content or replacement asset."
+  },
+  {
+    "from": "/home-addition-in-golden-denver-lakewood-arvada-morrison-wheat-ridge-and-surrounding-areas/",
+    "status": 301,
+    "to": "/construction-company-in-arvada-lakewood-co-denver-wheat-ridge-and-nearby-cities/",
+    "reason": "Repetitive legacy article consolidated into the corresponding updated planning topic; original text retained in data/legacy-crawl.json."
+  },
+  {
+    "from": "/custom-home-remodeling-contractor/snj-contracting-group-florida-bg2/",
+    "status": 301,
+    "to": "/custom-home-remodeling-contractor/",
+    "reason": "Empty WordPress media attachment page consolidated into its relevant content or replacement asset."
+  },
+  {
+    "from": "/construction-company-in-golden-co-denver-lakewood-co-arvada-and-nearby-cities/",
+    "status": 301,
+    "to": "/general-contractor-denver-co/",
+    "reason": "Repetitive legacy article consolidated into the corresponding updated planning topic; original text retained in data/legacy-crawl.json."
+  },
+  {
+    "from": "/home-addition-in-golden-co-denver-lakewood-co-arvada-wheat-ridge-and-surrounding-areas/",
+    "status": 200,
+    "to": "/home-addition-in-golden-co-denver-lakewood-co-arvada-wheat-ridge-and-surrounding-areas/",
+    "reason": "Article retained and refreshed at original URL."
+  },
+  {
+    "from": "/home-improvement-in-arvada-denver-lakewood-co-golden-co-morrison-and-nearby-cities/",
+    "status": 301,
+    "to": "/construction-company-in-arvada-lakewood-co-denver-wheat-ridge-and-nearby-cities/",
+    "reason": "Repetitive legacy article consolidated into the corresponding updated planning topic; original text retained in data/legacy-crawl.json."
+  },
+  {
+    "from": "/general-contractor-in-wheat-ridge-morrison-co-lakewood-co-and-all-the-surrounding-areas/summit-custom-builders/",
+    "status": 301,
+    "to": "/our-projects/",
+    "reason": "Empty WordPress media attachment page consolidated into its relevant content or replacement asset."
+  },
+  {
+    "from": "/bathroom-renovation-in-arvada-denver-lakewood-co-golden-wheat-ridge-and-surrounding-areas/",
+    "status": 301,
+    "to": "/bathroom-remodeling/",
+    "reason": "Repetitive legacy article consolidated into the corresponding updated planning topic; original text retained in data/legacy-crawl.json."
+  },
+  {
+    "from": "/bathroom-remodeling-bathroom-renovations-lakewood-co/bathroom-remodeling/",
+    "status": 301,
+    "to": "/bathroom-remodeling/",
+    "reason": "Empty WordPress media attachment page consolidated into its relevant content or replacement asset."
+  },
+  {
+    "from": "/construction-company-in-golden-co-arvada-denver-lakewood-co-and-nearby-cities/",
+    "status": 301,
+    "to": "/construction-company-in-arvada-lakewood-co-denver-wheat-ridge-and-nearby-cities/",
+    "reason": "Repetitive legacy article consolidated into the corresponding updated planning topic; original text retained in data/legacy-crawl.json."
+  },
+  {
+    "from": "/home-addition-in-golden-co-arvada-denver-lakewood-co-wheat-ridge-and-nearby-cities/",
+    "status": 301,
+    "to": "/blog/planning-home-addition-denver-metro/",
+    "reason": "Repetitive legacy article consolidated into the corresponding updated planning topic; original text retained in data/legacy-crawl.json."
+  },
+  {
+    "from": "/our-projects/",
+    "status": 200,
+    "to": "/our-projects/",
+    "reason": "Existing page retained at original URL."
+  },
+  {
+    "from": "/home-remodeling-in-morrison-co-lakewood-co-arvada-denver-golden-and-nearby-cities/",
+    "status": 301,
+    "to": "/construction-company-in-arvada-lakewood-co-denver-wheat-ridge-and-nearby-cities/",
+    "reason": "Repetitive legacy article consolidated into the corresponding updated planning topic; original text retained in data/legacy-crawl.json."
+  },
+  {
+    "from": "/general-contractor-in-morrison-co-lakewood-co-arvada-denver-and-surrounding-areas/",
+    "status": 301,
+    "to": "/construction-company-in-arvada-lakewood-co-denver-wheat-ridge-and-nearby-cities/",
+    "reason": "Repetitive legacy article consolidated into the corresponding updated planning topic; original text retained in data/legacy-crawl.json."
+  },
+  {
+    "from": "/home/home-improvement-wheat-ridge-co/",
+    "status": 301,
+    "to": "/our-projects/",
+    "reason": "Empty WordPress media attachment page consolidated into its relevant content or replacement asset."
+  },
+  {
+    "from": "/service-areas/",
+    "status": 200,
+    "to": "/service-areas/",
+    "reason": "Existing page retained at original URL."
+  },
+  {
+    "from": "/kitchen-remodeling-golden-co/",
+    "status": 200,
+    "to": "/kitchen-remodeling-golden-co/",
+    "reason": "Existing page retained at original URL."
+  },
+  {
+    "from": "/home-addition-arvada-co/",
+    "status": 200,
+    "to": "/home-addition-arvada-co/",
+    "reason": "Existing page retained at original URL."
+  },
+  {
+    "from": "/bathroom-renovations-denver-co/",
+    "status": 200,
+    "to": "/bathroom-renovations-denver-co/",
+    "reason": "Existing page retained at original URL."
+  },
+  {
+    "from": "/kitchen-remodeling-in-arvada-lakewood-co-wheat-ridge-golden-co-and-nearby-cities/",
+    "status": 301,
+    "to": "/kitchen-remodeling-in-arvada-denver-golden-lakewood-morrison-and-wheat-ridge-co/",
+    "reason": "Repetitive legacy article consolidated into the corresponding updated planning topic; original text retained in data/legacy-crawl.json."
+  },
+  {
+    "from": "/kitchen-remodeling-kitchen-renovations-arvada-co/kitchen-renovations/",
+    "status": 301,
+    "to": "/kitchen-home-remodeling-contractor/",
+    "reason": "Empty WordPress media attachment page consolidated into its relevant content or replacement asset."
+  },
+  {
+    "from": "/home-addition-in-lakewood-co-morrison-co-wheat-ridge-golden-co-and-surrounding-areas/",
+    "status": 301,
+    "to": "/construction-company-in-arvada-lakewood-co-denver-wheat-ridge-and-nearby-cities/",
+    "reason": "Repetitive legacy article consolidated into the corresponding updated planning topic; original text retained in data/legacy-crawl.json."
+  },
+  {
+    "from": "/home-remodeling-in-lakewood-co-denver-golden-co-arvada-morrison-co-and-nearby-cities/",
+    "status": 301,
+    "to": "/construction-company-in-arvada-lakewood-co-denver-wheat-ridge-and-nearby-cities/",
+    "reason": "Repetitive legacy article consolidated into the corresponding updated planning topic; original text retained in data/legacy-crawl.json."
+  },
+  {
+    "from": "/general-contractor-in-lakewood-co-denver-golden-co-arvada-morrison-co-and-surrounding-areas/",
+    "status": 301,
+    "to": "/construction-company-in-arvada-lakewood-co-denver-wheat-ridge-and-nearby-cities/",
+    "reason": "Repetitive legacy article consolidated into the corresponding updated planning topic; original text retained in data/legacy-crawl.json."
+  },
+  {
+    "from": "/service-areas/morrison-co-new-construction-company/",
+    "status": 301,
+    "to": "/service-areas/",
+    "reason": "Empty WordPress media attachment page consolidated into its relevant content or replacement asset."
+  },
+  {
+    "from": "/service-areas/lakewood-co-home-improvement-remodeling/",
+    "status": 301,
+    "to": "/service-areas/",
+    "reason": "Empty WordPress media attachment page consolidated into its relevant content or replacement asset."
+  },
+  {
+    "from": "/service-areas/golden-co-home-additions/",
+    "status": 301,
+    "to": "/service-areas/",
+    "reason": "Empty WordPress media attachment page consolidated into its relevant content or replacement asset."
+  },
+  {
+    "from": "/service-areas/wheat-ridge-co-ada-remodeling/",
+    "status": 301,
+    "to": "/service-areas/",
+    "reason": "Empty WordPress media attachment page consolidated into its relevant content or replacement asset."
+  },
+  {
+    "from": "/service-areas/arvada-kitchen-renovations/",
+    "status": 301,
+    "to": "/kitchen-home-remodeling-contractor/",
+    "reason": "Empty WordPress media attachment page consolidated into its relevant content or replacement asset."
+  },
+  {
+    "from": "/service-areas/denver-bathroom-renovations/",
+    "status": 301,
+    "to": "/bathroom-remodeling/",
+    "reason": "Empty WordPress media attachment page consolidated into its relevant content or replacement asset."
+  },
+  {
+    "from": "/home/snj-contracting-bg/",
+    "status": 301,
+    "to": "/our-projects/",
+    "reason": "Empty WordPress media attachment page consolidated into its relevant content or replacement asset."
+  },
+  {
+    "from": "/kitchen-remodeling-in-morrison-co-golden-co-lakewood-co-denver-arvada-and-nearby-cities/",
+    "status": 301,
+    "to": "/construction-company-in-arvada-lakewood-co-denver-wheat-ridge-and-nearby-cities/",
+    "reason": "Repetitive legacy article consolidated into the corresponding updated planning topic; original text retained in data/legacy-crawl.json."
+  },
+  {
+    "from": "/home-improvement-in-morrison-co-golden-co-lakewood-co-denver-arvada-and-surrounding-areas/",
+    "status": 301,
+    "to": "/construction-company-in-arvada-lakewood-co-denver-wheat-ridge-and-nearby-cities/",
+    "reason": "Repetitive legacy article consolidated into the corresponding updated planning topic; original text retained in data/legacy-crawl.json."
+  },
+  {
+    "from": "/kitchen-home-remodeling-contractor/kitchen-remodeling-denver-bg/",
+    "status": 301,
+    "to": "/kitchen-home-remodeling-contractor/",
+    "reason": "Empty WordPress media attachment page consolidated into its relevant content or replacement asset."
+  },
+  {
+    "from": "/bathroom-remodeling-in-arvada-denver-golden-co-lakewood-co-wheat-ridge-and-nearby-cities/",
+    "status": 301,
+    "to": "/construction-company-in-arvada-lakewood-co-denver-wheat-ridge-and-nearby-cities/",
+    "reason": "Repetitive legacy article consolidated into the corresponding updated planning topic; original text retained in data/legacy-crawl.json."
+  },
+  {
+    "from": "/home-improvement-in-morrison-co-golden-co-denver-lakewood-co-arvada-and-nearby-cities/",
+    "status": 301,
+    "to": "/home-remodeling-in-arvada-denver-golden-lakewood-morrison-and-wheat-ridge-co/",
+    "reason": "Repetitive legacy article consolidated into the corresponding updated planning topic; original text retained in data/legacy-crawl.json."
+  },
+  {
+    "from": "/bathroom-remodeling/bathroom-remodeling-concept-modern-fixtures-blue-tiling/",
+    "status": 301,
+    "to": "/bathroom-remodeling/",
+    "reason": "Empty WordPress media attachment page consolidated into its relevant content or replacement asset."
+  },
+  {
+    "from": "/construction-company-in-arvada-denver-golden-co-lakewood-co-morrison-co-and-surrounding-areas/",
+    "status": 301,
+    "to": "/construction-company-in-arvada-lakewood-co-denver-wheat-ridge-and-nearby-cities/",
+    "reason": "Repetitive legacy article consolidated into the corresponding updated planning topic; original text retained in data/legacy-crawl.json."
+  },
+  {
+    "from": "/bathroom-remodeling-bathroom-renovations-lakewood-co/",
+    "status": 200,
+    "to": "/bathroom-remodeling-bathroom-renovations-lakewood-co/",
+    "reason": "Existing page retained at original URL."
+  },
+  {
+    "from": "/kitchen-renovations-kitchen-remodeling-lakewood-co/",
+    "status": 200,
+    "to": "/kitchen-renovations-kitchen-remodeling-lakewood-co/",
+    "reason": "Existing page retained at original URL."
+  },
+  {
+    "from": "/kitchen-remodeling-3/",
+    "status": 301,
+    "to": "/kitchen-home-remodeling-contractor/",
+    "reason": "Empty WordPress media attachment page consolidated into its relevant content or replacement asset."
+  },
+  {
+    "from": "/lakewood-kitchen-banner/",
+    "status": 301,
+    "to": "/kitchen-home-remodeling-contractor/",
+    "reason": "Empty WordPress media attachment page consolidated into its relevant content or replacement asset."
+  },
+  {
+    "from": "/kitchen-remodeling-kitchen-renovations-arvada-co/",
+    "status": 200,
+    "to": "/kitchen-remodeling-kitchen-renovations-arvada-co/",
+    "reason": "Existing page retained at original URL."
+  },
+  {
+    "from": "/kitchen-remodeling-kitchen-renovations-arvada-co/kitchen-remodeling-2/",
+    "status": 301,
+    "to": "/kitchen-home-remodeling-contractor/",
+    "reason": "Empty WordPress media attachment page consolidated into its relevant content or replacement asset."
+  },
+  {
+    "from": "/kitchen-remodeling/",
+    "status": 301,
+    "to": "/kitchen-home-remodeling-contractor/",
+    "reason": "Empty WordPress media attachment page consolidated into its relevant content or replacement asset."
+  },
+  {
+    "from": "/home/home-restoration-poptop/",
+    "status": 301,
+    "to": "/our-projects/",
+    "reason": "Empty WordPress media attachment page consolidated into its relevant content or replacement asset."
+  },
+  {
+    "from": "/general-contractor-in-wheat-ridge-morrison-co-golden-co-denver-and-surrounding-areas/",
+    "status": 301,
+    "to": "/construction-company-in-arvada-lakewood-co-denver-wheat-ridge-and-nearby-cities/",
+    "reason": "Repetitive legacy article consolidated into the corresponding updated planning topic; original text retained in data/legacy-crawl.json."
+  },
+  {
+    "from": "/kitchen-remodeling-in-arvada-denver-golden-lakewood-morrison-and-wheat-ridge-co/",
+    "status": 200,
+    "to": "/kitchen-remodeling-in-arvada-denver-golden-lakewood-morrison-and-wheat-ridge-co/",
+    "reason": "Article retained and refreshed at original URL."
+  },
+  {
+    "from": "/construction-company-in-arvada-denver-lakewood-co-golden-go-morrison-co-and-nearby-cities/",
+    "status": 301,
+    "to": "/construction-company-in-arvada-lakewood-co-denver-wheat-ridge-and-nearby-cities/",
+    "reason": "Repetitive legacy article consolidated into the corresponding updated planning topic; original text retained in data/legacy-crawl.json."
+  },
+  {
+    "from": "/general-contractor-in-wheat-ridge-morrison-co-lakewood-co-and-all-the-surrounding-areas/",
+    "status": 301,
+    "to": "/construction-company-in-arvada-lakewood-co-denver-wheat-ridge-and-nearby-cities/",
+    "reason": "Repetitive legacy article consolidated into the corresponding updated planning topic; original text retained in data/legacy-crawl.json."
+  },
+  {
+    "from": "/bathroom-remodeling-in-golden-co-lakewood-co-denver-arvada-wheat-ridge-and-nearby-cities/",
+    "status": 301,
+    "to": "/bathroom-remodeling/",
+    "reason": "Repetitive legacy article consolidated into the corresponding updated planning topic; original text retained in data/legacy-crawl.json."
+  },
+  {
+    "from": "/bathroom-remodeling/bathroom-renovation-arvada-golden-co/",
+    "status": 301,
+    "to": "/bathroom-remodeling/",
+    "reason": "Empty WordPress media attachment page consolidated into its relevant content or replacement asset."
+  },
+  {
+    "from": "/construction-company-in-golden-co-lakewood-co-denver-arvada-morrison-co-and-surrounding-areas/",
+    "status": 301,
+    "to": "/construction-company-in-arvada-lakewood-co-denver-wheat-ridge-and-nearby-cities/",
+    "reason": "Repetitive legacy article consolidated into the corresponding updated planning topic; original text retained in data/legacy-crawl.json."
+  },
+  {
+    "from": "/custom-home-remodeling-contractor/summit-home-remodeling-bnr/",
+    "status": 301,
+    "to": "/custom-home-remodeling-contractor/",
+    "reason": "Empty WordPress media attachment page consolidated into its relevant content or replacement asset."
+  },
+  {
+    "from": "/home-remodeling-in-wheat-ridge-morrison-co-arvada-and-all-the-surrounding-areas/",
+    "status": 301,
+    "to": "/construction-company-in-arvada-lakewood-co-denver-wheat-ridge-and-nearby-cities/",
+    "reason": "Repetitive legacy article consolidated into the corresponding updated planning topic; original text retained in data/legacy-crawl.json."
+  },
+  {
+    "from": "/accessibility-statement/",
+    "status": 200,
+    "to": "/accessibility-statement/",
+    "reason": "Existing page retained at original URL."
+  },
+  {
+    "from": "/ada-remodeling/flooring-contractors-bg/",
+    "status": 301,
+    "to": "/ada-remodeling/",
+    "reason": "Empty WordPress media attachment page consolidated into its relevant content or replacement asset."
+  },
+  {
+    "from": "/bathroom-remodeling-in-arvada-denver-lakewood-co-golden-go-wheat-ridge-and-surrounding-areas/",
+    "status": 301,
+    "to": "/construction-company-in-arvada-lakewood-co-denver-wheat-ridge-and-nearby-cities/",
+    "reason": "Repetitive legacy article consolidated into the corresponding updated planning topic; original text retained in data/legacy-crawl.json."
+  },
+  {
+    "from": "/bathroom-renovations-bathroom-remodeling-wheat-ridge-co/tub-shower-bathroom-remodeling-wheat-ridge-co/",
+    "status": 301,
+    "to": "/bathroom-remodeling/",
+    "reason": "Empty WordPress media attachment page consolidated into its relevant content or replacement asset."
+  },
+  {
+    "from": "/home-addition-in-lakewood-co-golden-co-wheat-ridge-and-all-the-surrounding-areas/",
+    "status": 301,
+    "to": "/construction-company-in-arvada-lakewood-co-denver-wheat-ridge-and-nearby-cities/",
+    "reason": "Repetitive legacy article consolidated into the corresponding updated planning topic; original text retained in data/legacy-crawl.json."
+  },
+  {
+    "from": "/home-additions/home-addition-denver-golden-co-wheat-ridge-arvada/",
+    "status": 301,
+    "to": "/home-additions/",
+    "reason": "Empty WordPress media attachment page consolidated into its relevant content or replacement asset."
+  },
+  {
+    "from": "/bathroom-renovations-in-denver-lakewood-co-arvada-and-all-the-surrounding-areas/",
+    "status": 301,
+    "to": "/construction-company-in-arvada-lakewood-co-denver-wheat-ridge-and-nearby-cities/",
+    "reason": "Repetitive legacy article consolidated into the corresponding updated planning topic; original text retained in data/legacy-crawl.json."
+  },
+  {
+    "from": "/construction-remodeling-home-additions-home-improvement-lakewood-arvada-morrison-wheat-ridge-golden-co/",
+    "status": 200,
+    "to": "/construction-remodeling-home-additions-home-improvement-lakewood-arvada-morrison-wheat-ridge-golden-co/",
+    "reason": "Existing page retained at original URL."
+  },
+  {
+    "from": "/bathroom-remodeling-bathroom-renovations-morrison-co/",
+    "status": 200,
+    "to": "/bathroom-remodeling-bathroom-renovations-morrison-co/",
+    "reason": "Existing page retained at original URL."
+  },
+  {
+    "from": "/bathroom-renovations-bathroom-remodeling-wheat-ridge-co/",
+    "status": 200,
+    "to": "/bathroom-renovations-bathroom-remodeling-wheat-ridge-co/",
+    "reason": "Existing page retained at original URL."
+  },
+  {
+    "from": "/bathroom-remodeling-bathroom-renovations-golden-co/",
+    "status": 200,
+    "to": "/bathroom-remodeling-bathroom-renovations-golden-co/",
+    "reason": "Existing page retained at original URL."
+  },
+  {
+    "from": "/about-home-additions-general-contractor-bathroom-remodeling-ada-remodeling-denver-lakewood-arvada-morrison/",
+    "status": 200,
+    "to": "/about-home-additions-general-contractor-bathroom-remodeling-ada-remodeling-denver-lakewood-arvada-morrison/",
+    "reason": "Existing page retained at original URL."
+  },
+  {
+    "from": "/bathroom-remodeling-bathroom-renovations-morrison-co/bathroom-renovation-remodeling-morrison-co/",
+    "status": 301,
+    "to": "/bathroom-remodeling/",
+    "reason": "Empty WordPress media attachment page consolidated into its relevant content or replacement asset."
+  },
+  {
+    "from": "/bathroom-renovations-bathroom-remodeling-wheat-ridge-co/bathroom-renovation-wheat-ridge-co/",
+    "status": 301,
+    "to": "/bathroom-remodeling/",
+    "reason": "Empty WordPress media attachment page consolidated into its relevant content or replacement asset."
+  },
+  {
+    "from": "/bathroom-remodeling-bathroom-renovations-golden-co/tub-shower-conversion-bathroom-remodel-golden-co/",
+    "status": 301,
+    "to": "/bathroom-remodeling/",
+    "reason": "Empty WordPress media attachment page consolidated into its relevant content or replacement asset."
+  },
+  {
+    "from": "/home-remodeling-in-arvada-denver-golden-lakewood-morrison-and-wheat-ridge-co/",
+    "status": 200,
+    "to": "/home-remodeling-in-arvada-denver-golden-lakewood-morrison-and-wheat-ridge-co/",
+    "reason": "Article retained and refreshed at original URL."
+  },
+  {
+    "from": "/logo-340x87/",
+    "status": 301,
+    "to": "/assets/logo.png",
+    "reason": "Empty WordPress media attachment page consolidated into its relevant content or replacement asset."
+  },
+  {
+    "from": "/bathroom-remodeling-in-arvada-denver-golden-lakewood-morrison-and-wheat-ridge-co/",
+    "status": 200,
+    "to": "/bathroom-remodeling-in-arvada-denver-golden-lakewood-morrison-and-wheat-ridge-co/",
+    "reason": "Article retained and refreshed at original URL."
+  },
+  {
+    "from": "/?slides=slider-3",
+    "status": 301,
+    "to": "/",
+    "reason": "Legacy slider or media attachment; consolidated into its gallery/navigation context."
+  },
+  {
+    "from": "/?slides=slider-2",
+    "status": 301,
+    "to": "/",
+    "reason": "Legacy slider or media attachment; consolidated into its gallery/navigation context."
+  },
+  {
+    "from": "/?slides=slider-1",
+    "status": 301,
+    "to": "/",
+    "reason": "Legacy slider or media attachment; consolidated into its gallery/navigation context."
+  },
+  {
+    "from": "/kitchen-home-remodeling-contractor/kitchen-remodeling-dining-room-marble-modern/",
+    "status": 301,
+    "to": "/kitchen-home-remodeling-contractor/",
+    "reason": "Empty WordPress media attachment page consolidated into its relevant content or replacement asset."
+  },
+  {
+    "from": "/contact-contractor-renovations-in-denver-lakewood-arvada-morrison-wheat-ridge-golden-co/",
+    "status": 200,
+    "to": "/contact-contractor-renovations-in-denver-lakewood-arvada-morrison-wheat-ridge-golden-co/",
+    "reason": "Existing page retained at original URL."
+  },
+  {
+    "from": "/blog/",
+    "status": 200,
+    "to": "/blog/",
+    "reason": "Article retained and refreshed at original URL."
+  },
+  {
+    "from": "/ada-remodeling-in-arvada-denver-golden-lakewood-morrison-and-wheat-ridge-co/",
+    "status": 200,
+    "to": "/ada-remodeling-in-arvada-denver-golden-lakewood-morrison-and-wheat-ridge-co/",
+    "reason": "Article retained and refreshed at original URL."
+  },
+  {
+    "from": "/welcome-to-summit-custom-builders/",
+    "status": 200,
+    "to": "/welcome-to-summit-custom-builders/",
+    "reason": "Article retained and refreshed at original URL."
+  },
+  {
+    "from": "/?attachment_id=465",
+    "status": 301,
+    "to": "/our-projects/",
+    "reason": "Legacy slider or media attachment; consolidated into its gallery/navigation context."
+  },
+  {
+    "from": "/?attachment_id=640",
+    "status": 301,
+    "to": "/our-projects/",
+    "reason": "Legacy slider or media attachment; consolidated into its gallery/navigation context."
+  },
+  {
+    "from": "/home/aging-in-place-ada-remodeling-lakewood-co/",
+    "status": 301,
+    "to": "/our-projects/",
+    "reason": "Empty WordPress media attachment page consolidated into its relevant content or replacement asset."
+  },
+  {
+    "from": "/ada-remodeling/summit-ada-construction-bnr/",
+    "status": 301,
+    "to": "/ada-remodeling/",
+    "reason": "Empty WordPress media attachment page consolidated into its relevant content or replacement asset."
+  },
+  {
+    "from": "/home/banner/",
+    "status": 301,
+    "to": "/our-projects/",
+    "reason": "Empty WordPress media attachment page consolidated into its relevant content or replacement asset."
+  },
+  {
+    "from": "/?attachment_id=400",
+    "status": 301,
+    "to": "/our-projects/",
+    "reason": "Legacy slider or media attachment; consolidated into its gallery/navigation context."
+  },
+  {
+    "from": "/home/snj-contracting-group-florida-2/",
+    "status": 301,
+    "to": "/our-projects/",
+    "reason": "Empty WordPress media attachment page consolidated into its relevant content or replacement asset."
+  },
+  {
+    "from": "/home/snj-contracting-group-florida-3/",
+    "status": 301,
+    "to": "/our-projects/",
+    "reason": "Empty WordPress media attachment page consolidated into its relevant content or replacement asset."
+  },
+  {
+    "from": "/home/snj-contracting-group-florida-4/",
+    "status": 301,
+    "to": "/our-projects/",
+    "reason": "Empty WordPress media attachment page consolidated into its relevant content or replacement asset."
+  },
+  {
+    "from": "/bathroom-remodeling/snj-contracting-group-florida-bg3/",
+    "status": 301,
+    "to": "/bathroom-remodeling/",
+    "reason": "Empty WordPress media attachment page consolidated into its relevant content or replacement asset."
+  },
+  {
+    "from": "/bathroom-remodeling/home-restoration-florida/",
+    "status": 301,
+    "to": "/bathroom-remodeling/",
+    "reason": "Empty WordPress media attachment page consolidated into its relevant content or replacement asset."
+  },
+  {
+    "from": "/ada-remodeling/commercial-flooring-florida/",
+    "status": 301,
+    "to": "/ada-remodeling/",
+    "reason": "Empty WordPress media attachment page consolidated into its relevant content or replacement asset."
+  },
+  {
+    "from": "/home/home-renovation-kitchen-remodeling/",
+    "status": 301,
+    "to": "/kitchen-home-remodeling-contractor/",
+    "reason": "Empty WordPress media attachment page consolidated into its relevant content or replacement asset."
+  },
+  {
+    "from": "/ada-remodeling/ada-banner/",
+    "status": 301,
+    "to": "/ada-remodeling/",
+    "reason": "Empty WordPress media attachment page consolidated into its relevant content or replacement asset."
+  },
+  {
+    "from": "/ada-remodeling/shower-with-grab-bar/",
+    "status": 301,
+    "to": "/ada-remodeling/",
+    "reason": "Empty WordPress media attachment page consolidated into its relevant content or replacement asset."
+  },
+  {
+    "from": "/home-additions/banner-2/",
+    "status": 301,
+    "to": "/home-additions/",
+    "reason": "Empty WordPress media attachment page consolidated into its relevant content or replacement asset."
+  },
+  {
+    "from": "/construction-remodeling-home-additions-home-improvement-lakewood-arvada-morrison-wheat-ridge-golden-co/bathroom-additionoverview-bnr/",
+    "status": 301,
+    "to": "/bathroom-remodeling/",
+    "reason": "Empty WordPress media attachment page consolidated into its relevant content or replacement asset."
+  },
+  {
+    "from": "/about-home-additions-general-contractor-bathroom-remodeling-ada-remodeling-denver-lakewood-arvada-morrison/about-summit-custom-builders-bnr/",
+    "status": 301,
+    "to": "/bathroom-remodeling/",
+    "reason": "Empty WordPress media attachment page consolidated into its relevant content or replacement asset."
+  },
+  {
+    "from": "/construction-remodeling-home-additions-home-improvement-lakewood-arvada-morrison-wheat-ridge-golden-co/summit-bathroom-additions-construction/",
+    "status": 301,
+    "to": "/bathroom-remodeling/",
+    "reason": "Empty WordPress media attachment page consolidated into its relevant content or replacement asset."
+  },
+  {
+    "from": "/kitchen-home-remodeling-contractor/kitchen-remodeling-denver-bnr/",
+    "status": 301,
+    "to": "/kitchen-home-remodeling-contractor/",
+    "reason": "Empty WordPress media attachment page consolidated into its relevant content or replacement asset."
+  },
+  {
+    "from": "/ada-remodeling/aging-in-place-kitchen-remodeling/",
+    "status": 301,
+    "to": "/kitchen-home-remodeling-contractor/",
+    "reason": "Empty WordPress media attachment page consolidated into its relevant content or replacement asset."
+  },
+  {
+    "from": "/bathroom-remodeling/bathroom-banner/",
+    "status": 301,
+    "to": "/bathroom-remodeling/",
+    "reason": "Empty WordPress media attachment page consolidated into its relevant content or replacement asset."
+  },
+  {
+    "from": "/bathroom-remodeling/basement-project-from-fb/",
+    "status": 301,
+    "to": "/bathroom-remodeling/",
+    "reason": "Empty WordPress media attachment page consolidated into its relevant content or replacement asset."
+  },
+  {
+    "from": "/?attachment_id=464",
+    "status": 301,
+    "to": "/our-projects/",
+    "reason": "Legacy slider or media attachment; consolidated into its gallery/navigation context."
+  },
+  {
+    "from": "/cropped-site-identity-png/",
+    "status": 301,
+    "to": "/assets/logo.png",
+    "reason": "Empty WordPress media attachment page consolidated into its relevant content or replacement asset."
+  },
+  {
+    "from": "/site-identity/",
+    "status": 301,
+    "to": "/assets/logo.png",
+    "reason": "Empty WordPress media attachment page consolidated into its relevant content or replacement asset."
+  },
+  {
+    "from": "/bottom-logo-2/",
+    "status": 301,
+    "to": "/assets/logo.png",
+    "reason": "Empty WordPress media attachment page consolidated into its relevant content or replacement asset."
+  },
+  {
+    "from": "/twitter/",
+    "status": 301,
+    "to": "/our-projects/",
+    "reason": "Empty WordPress media attachment page consolidated into its relevant content or replacement asset."
+  },
+  {
+    "from": "/instagram-icon/",
+    "status": 301,
+    "to": "/our-projects/",
+    "reason": "Empty WordPress media attachment page consolidated into its relevant content or replacement asset."
+  },
+  {
+    "from": "/facebook-icon/",
+    "status": 301,
+    "to": "/our-projects/",
+    "reason": "Empty WordPress media attachment page consolidated into its relevant content or replacement asset."
+  },
+  {
+    "from": "/?attachment_id=401",
+    "status": 301,
+    "to": "/our-projects/",
+    "reason": "Legacy slider or media attachment; consolidated into its gallery/navigation context."
+  },
+  {
+    "from": "/sitemap/",
+    "status": 200,
+    "to": "/sitemap/",
+    "reason": "Existing page retained at original URL."
+  }
+]

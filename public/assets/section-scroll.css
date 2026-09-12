@@ -1,0 +1,77 @@
+/* Architectural motion: a construction line and a contained photographic drift. */
+.scroll-photo-window{display:block;overflow:clip}
+.scroll-photo-window img{transform-origin:center;transition:none}
+.scroll-process{position:relative;isolation:isolate}
+.scroll-process::before,.scroll-process::after{content:"";position:absolute;left:9px;top:36px;bottom:36px;width:1px;z-index:-1;pointer-events:none;background:var(--line)}
+.scroll-process::after{background:var(--orange);transform:scaleY(var(--process-progress,0));transform-origin:top}
+.scroll-process .step-number{align-self:flex-start;position:relative;background:var(--paper);padding-block:6px;line-height:1.4}
+@media(max-width:500px){.scroll-process::before,.scroll-process::after{left:7px}}
+@media(prefers-reduced-motion:reduce),print{
+  .scroll-process::before,.scroll-process::after{display:none}
+  main :is(.service-feature-photo,.service-feature-copy>*,.section-heading>*,.section>h2,.content-card,.gallery-link,.photo,.photo img,figcaption,.prose-section>*,.motion-inline,.local-feature>*,.city-list>a,.contact-band div,.contact-band div>*,.article-next>*,.planning-checklist>*,.process-list li>*,.process-list li>div>*){transform:none!important;opacity:1!important;clip-path:none!important}
+}
+
+/* Line masks include the glyph overshoot, so tails and accents stay intact. */
+.summit-line-mask{padding-block:.12em;margin-block:-.12em}
+.summit-line{transform-origin:left bottom}
+
+/* Static layouts are the default, including when GSAP or JavaScript is unavailable. */
+.process-deck{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;align-content:start;padding-block:30px 55px;min-width:0}
+.process-frame{background:var(--paper)}
+.process-deck>.process-frame:first-child{grid-column:1/-1}
+.process-frame .photo img{aspect-ratio:4/3;object-fit:cover}
+.process-frame figcaption{background:var(--paper);padding:16px 0 20px;font-size:.78rem}
+.process-film{max-width:900px;margin:0 auto 80px}
+.process-film .motion-inline{margin-bottom:0}
+.showcase-stage{min-width:0}
+
+/* Activated only when the viewport has room for a complete held stage. */
+.service-chapter{align-items:start;background:transparent;gap:0;margin-bottom:72px}
+.service-chapter .service-feature-photo{position:sticky;top:8vh;align-self:start;min-height:0;height:70vh;max-height:740px}
+.service-chapter .service-feature-photo .photo{display:block;overflow:clip}
+.service-chapter .service-feature-photo .photo img{width:100%;height:100%;transition:none;object-fit:cover}
+.service-chapter .service-feature-copy{align-self:stretch;min-height:112vh;display:flex;flex-direction:column;justify-content:center;gap:clamp(22px,3.5vh,42px);padding:70px 42px;background:var(--sage)}
+.service-chapter .service-feature-copy>h2,.service-chapter .service-feature-copy>p,.service-chapter .service-feature-copy>ul{margin:0}
+.service-chapter .service-feature-copy h2{font-size:clamp(2.5rem,3.5vw,3.3rem);line-height:1.1}
+.service-chapter .service-feature-copy .text-link{align-self:flex-start;margin:0}
+.service-chapter .service-feature-copy li{padding-block:18px}
+
+.process-story{align-items:start;gap:64px;padding-bottom:55px}
+.process-story .process-list{margin-top:0;margin-bottom:0}
+.process-story .process-list>li{min-height:64vh;align-items:center;padding-block:65px}
+.process-story .process-list>li:last-child{min-height:72vh}
+.process-story .step-number{align-self:center;font-size:1rem}
+.process-story .process-list h2{font-size:clamp(1.8rem,2.5vw,2.6rem);max-width:520px}
+.process-story .process-step-current h2{color:var(--brown)}
+.process-story .process-deck{position:sticky;top:12vh;display:grid;grid-template-columns:1fr;padding:0;margin-top:8vh;overflow:clip}
+.process-story .process-frame{grid-area:1/1;align-self:start;margin:0;background:var(--paper);min-width:0}
+.process-story .process-frame .photo{display:block;height:min(62vh,620px);overflow:clip}
+.process-story .process-frame .photo img{width:100%;height:100%;aspect-ratio:auto;object-fit:cover}
+.process-story .process-frame figcaption{border-bottom:1px solid var(--line);min-height:64px}
+
+.showcase-pan{padding-top:40px;margin-bottom:65px}
+.showcase-pan .showcase-stage{overflow:hidden;padding:0 0 8px;background:var(--paper)}
+.showcase-pan .section-heading{margin-bottom:26px;max-width:100%}
+.showcase-pan .section-heading .eyebrow{margin-bottom:10px}
+.showcase-pan .section-heading h2{font-size:clamp(2rem,3.5vw,3rem);margin:0}
+.showcase-pan .gallery-updated{display:flex;gap:32px;width:100%;margin:0;align-items:flex-start}
+.showcase-pan .gallery-updated>.photo-figure{flex:0 0 clamp(400px,43vw,600px);width:clamp(400px,43vw,600px)}
+.showcase-pan .gallery-updated .photo img{width:100%;height:min(49vh,510px);aspect-ratio:auto;object-fit:cover}
+.showcase-pan .gallery-updated figcaption{font-size:.82rem;max-width:42ch;padding-top:16px}
+
+@media(max-width:1049px){
+ .process-deck{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 18px;padding-block:10px 45px}
+ .process-deck .process-frame:first-child{grid-column:1/-1}
+ .process-deck .process-frame:first-child .photo img{aspect-ratio:16/9}
+ .process-visual-layout:has(.process-deck){grid-template-columns:1fr;gap:0}
+ .process-film{margin-bottom:55px}
+}
+@media(max-width:500px){
+ .process-frame figcaption{font-size:.7rem;padding-top:10px}
+ .process-film .section-heading{margin-bottom:20px}
+}
+@media(prefers-reduced-motion:reduce),print{
+ .summit-line{transform:none!important;opacity:1!important}
+ .summit-line-mask{overflow:visible!important}
+ .process-frame{clip-path:none!important;transform:none!important}
+}

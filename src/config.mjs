@@ -1,0 +1,35 @@
+export const site = {
+  name: 'Summit Custom Builders',
+  legalName: 'Summit Custom Builders, Inc.',
+  url: (process.env.SITE_URL || 'https://www.summitcustombuilders.net').replace(/\/$/, ''),
+  phone: '720-431-1056', tel: '+17204311056',
+  address: { streetAddress: '825 S. Yates St.', addressLocality: 'Denver', addressRegion: 'CO', postalCode: '80219', addressCountry: 'US' },
+  date: '2026-09-11',
+};
+export const paths = {
+  home: '/',
+  services: '/construction-remodeling-home-additions-home-improvement-lakewood-arvada-morrison-wheat-ridge-golden-co/',
+  areas: '/service-areas/',
+  about: '/about-home-additions-general-contractor-bathroom-remodeling-ada-remodeling-denver-lakewood-arvada-morrison/',
+  process: '/our-process/', projects: '/our-projects/', resources: '/blog/',
+  contact: '/contact-contractor-renovations-in-denver-lakewood-arvada-morrison-wheat-ridge-golden-co/',
+  privacy: '/privacy-policy/', accessibility: '/accessibility-statement/', sitemap: '/sitemap/', thanks: '/thank-you/',
+};
+export const source = {
+  address: ['Jefferson County address lookup', 'https://www.jeffco.us/2197/Address-Lookup'],
+  geology: ['Jefferson County geology and hazard maps', 'https://www.jeffco.us/2712/Geology'],
+  ddba: ['Jefferson County Dipping Bedrock Area Guide', 'https://www.jeffco.us/DocumentCenter/View/2074/Designated-Dipping-Bedrock-Area-Guide-PDF'],
+  wildfire: ['Jefferson County defensible space and structure hardening', 'https://www.jeffco.us/2672/Defensible-Space-Structure-Hardening'],
+  asbestos: ['CDPHE asbestos information', 'https://cdphe.colorado.gov/indoor-air-quality/asbestos-general-information'],
+  asbestosRule: ['Colorado Regulation 8, Part B, Section III (regulation text)', 'https://www.law.cornell.edu/regulations/colorado/Article-5-CCR-1001-10-B-III'],
+  ada: ['ADA.gov: requirements for businesses open to the public', 'https://www.ada.gov/topics/title-iii/'],
+  lead: ['EPA lead-safe renovation guidance', 'https://www.epa.gov/lead/renovation-repair-and-painting-program'],
+  radon: ['EPA radon guidance for homeowners', 'https://www.epa.gov/radon'],
+  denver: ['Denver residential permits and plan review', 'https://www.denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Community-Planning-and-Development/Plan-Review-Permits-and-Inspections'],
+  arvada: ['Arvada residential interior remodeling', 'https://www.arvadaco.gov/423/Residential-Interior'],
+  arvadaPermits: ['Arvada building permits', 'https://www.arvadaco.gov/332/Building-Permits'],
+  wheat: ['Wheat Ridge Building Division', 'https://www.wheatridge.gov/278/Building-Division'],
+  morrison: ['Morrison permits and residential checklists', 'https://www.morrisonco.us/142/Permits-Checklists'],
+  golden: ['Golden historic preservation code', 'https://library.municode.com/co/golden/codes/municipal_code?nodeId=TIT18PLZO_CH18.58HIPR_18.58.100LIREREPRDE'],
+  lakewood: ['Lakewood zoning and standards', 'https://www.lakewoodco.gov/Local-Government/Departments/Sustainability-and-Community-Development/Development-Assistance/Development-Assistance/Zoning-and-Standards'],
+};

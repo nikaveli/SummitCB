@@ -1,0 +1,13 @@
+dist/
+.data/
+.env
+node_modules/
+artifacts/
+.DS_Store
+dist-pages/
+website images/
+website videos/
+Logo/
+brand-info/
+.env.*
+!.env.example

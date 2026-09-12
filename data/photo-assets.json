@@ -1,0 +1,893 @@
+[
+  {
+    "id": "framing",
+    "source": "website images/Website Images Assets/denver-home-addition-framing-project-4k-16x9.jpg",
+    "originalBytes": 2865120,
+    "alt": "Exposed timber framing above an existing brick home",
+    "files": [
+      {
+        "name": "denver-home-addition-framing-project-480.webp",
+        "width": 480,
+        "bytes": 35520
+      },
+      {
+        "name": "denver-home-addition-framing-project-800.webp",
+        "width": 800,
+        "bytes": 91680
+      },
+      {
+        "name": "denver-home-addition-framing-project-1280.webp",
+        "width": 1280,
+        "bytes": 204512
+      },
+      {
+        "name": "denver-home-addition-framing-project-1920.webp",
+        "width": 1920,
+        "bytes": 413720
+      },
+      {
+        "name": "denver-home-addition-framing-project-1280.jpg",
+        "width": 1280,
+        "bytes": 214500
+      }
+    ]
+  },
+  {
+    "id": "framingWide",
+    "source": "website images/Website Images Assets/denver-two-story-home-addition-construction-4k-16x9.jpg",
+    "originalBytes": 2688583,
+    "alt": "Two-story home addition under construction beside mature trees",
+    "files": [
+      {
+        "name": "denver-two-story-home-addition-construction-480.webp",
+        "width": 480,
+        "bytes": 33388
+      },
+      {
+        "name": "denver-two-story-home-addition-construction-800.webp",
+        "width": 800,
+        "bytes": 85714
+      },
+      {
+        "name": "denver-two-story-home-addition-construction-1280.webp",
+        "width": 1280,
+        "bytes": 188644
+      },
+      {
+        "name": "denver-two-story-home-addition-construction-1920.webp",
+        "width": 1920,
+        "bytes": 391222
+      },
+      {
+        "name": "denver-two-story-home-addition-construction-1280.jpg",
+        "width": 1280,
+        "bytes": 199831
+      }
+    ]
+  },
+  {
+    "id": "framingMaterials",
+    "source": "website images/Website Images Assets/denver-home-addition-framing-and-materials-4k-16x9.jpg",
+    "originalBytes": 2809984,
+    "alt": "Addition framing, sheathing, and stacked construction materials",
+    "files": [
+      {
+        "name": "denver-home-addition-framing-and-materials-480.webp",
+        "width": 480,
+        "bytes": 32302
+      },
+      {
+        "name": "denver-home-addition-framing-and-materials-800.webp",
+        "width": 800,
+        "bytes": 85234
+      },
+      {
+        "name": "denver-home-addition-framing-and-materials-1280.webp",
+        "width": 1280,
+        "bytes": 196360
+      },
+      {
+        "name": "denver-home-addition-framing-and-materials-1920.webp",
+        "width": 1920,
+        "bytes": 417412
+      },
+      {
+        "name": "denver-home-addition-framing-and-materials-1280.jpg",
+        "width": 1280,
+        "bytes": 199149
+      }
+    ]
+  },
+  {
+    "id": "backyard",
+    "source": "website images/Website Images Assets/denver-backyard-home-addition-construction-4k-16x9.jpg",
+    "originalBytes": 3317404,
+    "alt": "Backyard view of a home addition during construction",
+    "files": [
+      {
+        "name": "denver-backyard-home-addition-construction-480.webp",
+        "width": 480,
+        "bytes": 39182
+      },
+      {
+        "name": "denver-backyard-home-addition-construction-800.webp",
+        "width": 800,
+        "bytes": 105190
+      },
+      {
+        "name": "denver-backyard-home-addition-construction-1280.webp",
+        "width": 1280,
+        "bytes": 246960
+      },
+      {
+        "name": "denver-backyard-home-addition-construction-1920.webp",
+        "width": 1920,
+        "bytes": 524900
+      },
+      {
+        "name": "denver-backyard-home-addition-construction-1280.jpg",
+        "width": 1280,
+        "bytes": 241191
+      }
+    ]
+  },
+  {
+    "id": "windowWork",
+    "source": "website images/Website Images Assets/denver-exterior-window-opening-renovation-4k-16x9.jpg",
+    "originalBytes": 1830539,
+    "alt": "Work in progress around a large exterior window opening",
+    "files": [
+      {
+        "name": "denver-exterior-window-opening-renovation-480.webp",
+        "width": 480,
+        "bytes": 25944
+      },
+      {
+        "name": "denver-exterior-window-opening-renovation-800.webp",
+        "width": 800,
+        "bytes": 60200
+      },
+      {
+        "name": "denver-exterior-window-opening-renovation-1280.webp",
+        "width": 1280,
+        "bytes": 121122
+      },
+      {
+        "name": "denver-exterior-window-opening-renovation-1920.webp",
+        "width": 1920,
+        "bytes": 228402
+      },
+      {
+        "name": "denver-exterior-window-opening-renovation-1280.jpg",
+        "width": 1280,
+        "bytes": 147818
+      }
+    ]
+  },
+  {
+    "id": "windowDone",
+    "source": "website images/Website Images Assets/denver-replacement-window-home-remodel-4k-16x9.jpg",
+    "originalBytes": 1962746,
+    "alt": "Large replacement window in a textured exterior wall",
+    "files": [
+      {
+        "name": "denver-replacement-window-home-remodel-480.webp",
+        "width": 480,
+        "bytes": 24740
+      },
+      {
+        "name": "denver-replacement-window-home-remodel-800.webp",
+        "width": 800,
+        "bytes": 60850
+      },
+      {
+        "name": "denver-replacement-window-home-remodel-1280.webp",
+        "width": 1280,
+        "bytes": 132128
+      },
+      {
+        "name": "denver-replacement-window-home-remodel-1920.webp",
+        "width": 1920,
+        "bytes": 260576
+      },
+      {
+        "name": "denver-replacement-window-home-remodel-1280.jpg",
+        "width": 1280,
+        "bytes": 152646
+      }
+    ]
+  },
+  {
+    "id": "whiteKitchen",
+    "source": "website images/Website Images Assets/denver-white-cabinet-kitchen-remodel-4k-16x9.jpg",
+    "originalBytes": 1117156,
+    "alt": "White kitchen cabinetry, full-height storage, and pale wood flooring",
+    "files": [
+      {
+        "name": "denver-white-cabinet-kitchen-remodel-480.webp",
+        "width": 480,
+        "bytes": 11430
+      },
+      {
+        "name": "denver-white-cabinet-kitchen-remodel-800.webp",
+        "width": 800,
+        "bytes": 23742
+      },
+      {
+        "name": "denver-white-cabinet-kitchen-remodel-1280.webp",
+        "width": 1280,
+        "bytes": 45430
+      },
+      {
+        "name": "denver-white-cabinet-kitchen-remodel-1920.webp",
+        "width": 1920,
+        "bytes": 84980
+      },
+      {
+        "name": "denver-white-cabinet-kitchen-remodel-1280.jpg",
+        "width": 1280,
+        "bytes": 79139
+      }
+    ]
+  },
+  {
+    "id": "island",
+    "source": "website images/Website Images Assets/denver-white-kitchen-island-renovation-4k-16x9.jpg",
+    "originalBytes": 1162275,
+    "alt": "White kitchen island with a stone surface and brass-toned faucet",
+    "files": [
+      {
+        "name": "denver-white-kitchen-island-renovation-480.webp",
+        "width": 480,
+        "bytes": 12236
+      },
+      {
+        "name": "denver-white-kitchen-island-renovation-800.webp",
+        "width": 800,
+        "bytes": 25854
+      },
+      {
+        "name": "denver-white-kitchen-island-renovation-1280.webp",
+        "width": 1280,
+        "bytes": 52182
+      },
+      {
+        "name": "denver-white-kitchen-island-renovation-1920.webp",
+        "width": 1920,
+        "bytes": 95310
+      },
+      {
+        "name": "denver-white-kitchen-island-renovation-1280.jpg",
+        "width": 1280,
+        "bytes": 83848
+      }
+    ]
+  },
+  {
+    "id": "peninsula",
+    "source": "website images/Website Images Assets/denver-modern-kitchen-peninsula-remodel-4k-16x9.jpg",
+    "originalBytes": 1071993,
+    "alt": "Long kitchen peninsula beneath a skylight",
+    "files": [
+      {
+        "name": "denver-modern-kitchen-peninsula-remodel-480.webp",
+        "width": 480,
+        "bytes": 8916
+      },
+      {
+        "name": "denver-modern-kitchen-peninsula-remodel-800.webp",
+        "width": 800,
+        "bytes": 19092
+      },
+      {
+        "name": "denver-modern-kitchen-peninsula-remodel-1280.webp",
+        "width": 1280,
+        "bytes": 38016
+      },
+      {
+        "name": "denver-modern-kitchen-peninsula-remodel-1920.webp",
+        "width": 1920,
+        "bytes": 71402
+      },
+      {
+        "name": "denver-modern-kitchen-peninsula-remodel-1280.jpg",
+        "width": 1280,
+        "bytes": 70122
+      }
+    ]
+  },
+  {
+    "id": "quartz",
+    "source": "website images/Website Images Assets/denver-quartz-countertop-kitchen-renovation-4k-16x9.jpg",
+    "originalBytes": 1124368,
+    "alt": "Pale stone countertops meeting white cabinetry in a renovated kitchen",
+    "files": [
+      {
+        "name": "denver-quartz-countertop-kitchen-renovation-480.webp",
+        "width": 480,
+        "bytes": 12792
+      },
+      {
+        "name": "denver-quartz-countertop-kitchen-renovation-800.webp",
+        "width": 800,
+        "bytes": 27396
+      },
+      {
+        "name": "denver-quartz-countertop-kitchen-renovation-1280.webp",
+        "width": 1280,
+        "bytes": 52468
+      },
+      {
+        "name": "denver-quartz-countertop-kitchen-renovation-1920.webp",
+        "width": 1920,
+        "bytes": 96206
+      },
+      {
+        "name": "denver-quartz-countertop-kitchen-renovation-1280.jpg",
+        "width": 1280,
+        "bytes": 84415
+      }
+    ]
+  },
+  {
+    "id": "cooktop",
+    "source": "website images/Website Images Assets/denver-cooktop-white-cabinet-kitchen-renovation-4k-16x9.jpg",
+    "originalBytes": 1058757,
+    "alt": "Cooktop and range hood surrounded by white cabinetry",
+    "files": [
+      {
+        "name": "denver-cooktop-white-cabinet-kitchen-renovation-480.webp",
+        "width": 480,
+        "bytes": 9268
+      },
+      {
+        "name": "denver-cooktop-white-cabinet-kitchen-renovation-800.webp",
+        "width": 800,
+        "bytes": 18906
+      },
+      {
+        "name": "denver-cooktop-white-cabinet-kitchen-renovation-1280.webp",
+        "width": 1280,
+        "bytes": 35574
+      },
+      {
+        "name": "denver-cooktop-white-cabinet-kitchen-renovation-1920.webp",
+        "width": 1920,
+        "bytes": 65508
+      },
+      {
+        "name": "denver-cooktop-white-cabinet-kitchen-renovation-1280.jpg",
+        "width": 1280,
+        "bytes": 71357
+      }
+    ]
+  },
+  {
+    "id": "lighting",
+    "source": "website images/Website Images Assets/denver-under-cabinet-lighting-kitchen-remodel-4k-16x9.jpg",
+    "originalBytes": 1098169,
+    "alt": "Illuminated backsplash beneath white kitchen cabinets",
+    "files": [
+      {
+        "name": "denver-under-cabinet-lighting-kitchen-remodel-480.webp",
+        "width": 480,
+        "bytes": 12202
+      },
+      {
+        "name": "denver-under-cabinet-lighting-kitchen-remodel-800.webp",
+        "width": 800,
+        "bytes": 25770
+      },
+      {
+        "name": "denver-under-cabinet-lighting-kitchen-remodel-1280.webp",
+        "width": 1280,
+        "bytes": 48020
+      },
+      {
+        "name": "denver-under-cabinet-lighting-kitchen-remodel-1920.webp",
+        "width": 1920,
+        "bytes": 85730
+      },
+      {
+        "name": "denver-under-cabinet-lighting-kitchen-remodel-1280.jpg",
+        "width": 1280,
+        "bytes": 81855
+      }
+    ]
+  },
+  {
+    "id": "appliances",
+    "source": "website images/Website Images Assets/denver-stainless-appliance-white-kitchen-remodel-4k-16x9.jpg",
+    "originalBytes": 1179919,
+    "alt": "Stainless refrigerator and wall ovens fitted into white cabinetry",
+    "files": [
+      {
+        "name": "denver-stainless-appliance-white-kitchen-remodel-480.webp",
+        "width": 480,
+        "bytes": 9990
+      },
+      {
+        "name": "denver-stainless-appliance-white-kitchen-remodel-800.webp",
+        "width": 800,
+        "bytes": 20456
+      },
+      {
+        "name": "denver-stainless-appliance-white-kitchen-remodel-1280.webp",
+        "width": 1280,
+        "bytes": 40616
+      },
+      {
+        "name": "denver-stainless-appliance-white-kitchen-remodel-1920.webp",
+        "width": 1920,
+        "bytes": 80692
+      },
+      {
+        "name": "denver-stainless-appliance-white-kitchen-remodel-1280.jpg",
+        "width": 1280,
+        "bytes": 82456
+      }
+    ]
+  },
+  {
+    "id": "navyKitchen",
+    "source": "website images/Website Images Assets/denver-navy-blue-kitchen-remodel-4k-16x9.jpg",
+    "originalBytes": 1180885,
+    "alt": "Navy base cabinets and white upper cabinets with a dark tile backsplash",
+    "files": [
+      {
+        "name": "denver-navy-blue-kitchen-remodel-480.webp",
+        "width": 480,
+        "bytes": 14934
+      },
+      {
+        "name": "denver-navy-blue-kitchen-remodel-800.webp",
+        "width": 800,
+        "bytes": 31936
+      },
+      {
+        "name": "denver-navy-blue-kitchen-remodel-1280.webp",
+        "width": 1280,
+        "bytes": 61630
+      },
+      {
+        "name": "denver-navy-blue-kitchen-remodel-1920.webp",
+        "width": 1920,
+        "bytes": 109802
+      },
+      {
+        "name": "denver-navy-blue-kitchen-remodel-1280.jpg",
+        "width": 1280,
+        "bytes": 96469
+      }
+    ]
+  },
+  {
+    "id": "navySink",
+    "source": "website images/Website Images Assets/denver-navy-cabinet-kitchen-sink-remodel-4k-16x9.jpg",
+    "originalBytes": 1196365,
+    "alt": "Kitchen sink and gold-toned faucet above navy blue cabinetry",
+    "files": [
+      {
+        "name": "denver-navy-cabinet-kitchen-sink-remodel-480.webp",
+        "width": 480,
+        "bytes": 15386
+      },
+      {
+        "name": "denver-navy-cabinet-kitchen-sink-remodel-800.webp",
+        "width": 800,
+        "bytes": 32286
+      },
+      {
+        "name": "denver-navy-cabinet-kitchen-sink-remodel-1280.webp",
+        "width": 1280,
+        "bytes": 60700
+      },
+      {
+        "name": "denver-navy-cabinet-kitchen-sink-remodel-1920.webp",
+        "width": 1920,
+        "bytes": 107842
+      },
+      {
+        "name": "denver-navy-cabinet-kitchen-sink-remodel-1280.jpg",
+        "width": 1280,
+        "bytes": 96147
+      }
+    ]
+  },
+  {
+    "id": "range",
+    "source": "website images/Website Images Assets/denver-gas-range-kitchen-remodel-detail-4k-16x9.jpg",
+    "originalBytes": 971718,
+    "alt": "Close view of a gas range and dark tiled kitchen backsplash",
+    "files": [
+      {
+        "name": "denver-gas-range-kitchen-remodel-detail-480.webp",
+        "width": 480,
+        "bytes": 13640
+      },
+      {
+        "name": "denver-gas-range-kitchen-remodel-detail-800.webp",
+        "width": 800,
+        "bytes": 24858
+      },
+      {
+        "name": "denver-gas-range-kitchen-remodel-detail-1280.webp",
+        "width": 1280,
+        "bytes": 42250
+      },
+      {
+        "name": "denver-gas-range-kitchen-remodel-detail-1920.webp",
+        "width": 1920,
+        "bytes": 68686
+      },
+      {
+        "name": "denver-gas-range-kitchen-remodel-detail-1280.jpg",
+        "width": 1280,
+        "bytes": 72049
+      }
+    ]
+  },
+  {
+    "id": "sink",
+    "source": "website images/Website Images Assets/denver-open-concept-kitchen-island-sink-remodel-4k-16x9.jpg",
+    "originalBytes": 1031287,
+    "alt": "Kitchen island sink looking across an open white kitchen",
+    "files": [
+      {
+        "name": "denver-open-concept-kitchen-island-sink-remodel-480.webp",
+        "width": 480,
+        "bytes": 10020
+      },
+      {
+        "name": "denver-open-concept-kitchen-island-sink-remodel-800.webp",
+        "width": 800,
+        "bytes": 20466
+      },
+      {
+        "name": "denver-open-concept-kitchen-island-sink-remodel-1280.webp",
+        "width": 1280,
+        "bytes": 39108
+      },
+      {
+        "name": "denver-open-concept-kitchen-island-sink-remodel-1920.webp",
+        "width": 1920,
+        "bytes": 71216
+      },
+      {
+        "name": "denver-open-concept-kitchen-island-sink-remodel-1280.jpg",
+        "width": 1280,
+        "bytes": 70744
+      }
+    ]
+  },
+  {
+    "id": "bathtub",
+    "source": "website images/Website Images Assets/denver-freestanding-tub-bathroom-renovation-4k-16x9.jpg",
+    "originalBytes": 1329813,
+    "alt": "Freestanding white bathtub beside a window and patterned tile wall",
+    "files": [
+      {
+        "name": "denver-freestanding-tub-bathroom-renovation-480.webp",
+        "width": 480,
+        "bytes": 13980
+      },
+      {
+        "name": "denver-freestanding-tub-bathroom-renovation-800.webp",
+        "width": 800,
+        "bytes": 29556
+      },
+      {
+        "name": "denver-freestanding-tub-bathroom-renovation-1280.webp",
+        "width": 1280,
+        "bytes": 58346
+      },
+      {
+        "name": "denver-freestanding-tub-bathroom-renovation-1920.webp",
+        "width": 1920,
+        "bytes": 110714
+      },
+      {
+        "name": "denver-freestanding-tub-bathroom-renovation-1280.jpg",
+        "width": 1280,
+        "bytes": 93967
+      }
+    ]
+  },
+  {
+    "id": "tubShower",
+    "source": "website images/Website Images Assets/denver-freestanding-tub-walk-in-shower-remodel-4k-16x9.jpg",
+    "originalBytes": 1414371,
+    "alt": "Freestanding bathtub beside a glass-enclosed shower",
+    "files": [
+      {
+        "name": "denver-freestanding-tub-walk-in-shower-remodel-480.webp",
+        "width": 480,
+        "bytes": 8814
+      },
+      {
+        "name": "denver-freestanding-tub-walk-in-shower-remodel-800.webp",
+        "width": 800,
+        "bytes": 23580
+      },
+      {
+        "name": "denver-freestanding-tub-walk-in-shower-remodel-1280.webp",
+        "width": 1280,
+        "bytes": 57174
+      },
+      {
+        "name": "denver-freestanding-tub-walk-in-shower-remodel-1920.webp",
+        "width": 1920,
+        "bytes": 125764
+      },
+      {
+        "name": "denver-freestanding-tub-walk-in-shower-remodel-1280.jpg",
+        "width": 1280,
+        "bytes": 80331
+      }
+    ]
+  },
+  {
+    "id": "tubDetail",
+    "source": "website images/Website Images Assets/denver-freestanding-tub-faucet-detail-4k-16x9.jpg",
+    "originalBytes": 902376,
+    "alt": "Brass-toned faucet beside the curved edge of a freestanding tub",
+    "files": [
+      {
+        "name": "denver-freestanding-tub-faucet-detail-480.webp",
+        "width": 480,
+        "bytes": 6264
+      },
+      {
+        "name": "denver-freestanding-tub-faucet-detail-800.webp",
+        "width": 800,
+        "bytes": 13184
+      },
+      {
+        "name": "denver-freestanding-tub-faucet-detail-1280.webp",
+        "width": 1280,
+        "bytes": 25002
+      },
+      {
+        "name": "denver-freestanding-tub-faucet-detail-1920.webp",
+        "width": 1920,
+        "bytes": 46214
+      },
+      {
+        "name": "denver-freestanding-tub-faucet-detail-1280.jpg",
+        "width": 1280,
+        "bytes": 47862
+      }
+    ]
+  },
+  {
+    "id": "patternedTile",
+    "source": "website images/Website Images Assets/denver-patterned-tile-freestanding-tub-remodel-4k-16x9.jpg",
+    "originalBytes": 1426863,
+    "alt": "Patterned shower tile beside a freestanding bathtub and window",
+    "files": [
+      {
+        "name": "denver-patterned-tile-freestanding-tub-remodel-480.webp",
+        "width": 480,
+        "bytes": 17722
+      },
+      {
+        "name": "denver-patterned-tile-freestanding-tub-remodel-800.webp",
+        "width": 800,
+        "bytes": 37392
+      },
+      {
+        "name": "denver-patterned-tile-freestanding-tub-remodel-1280.webp",
+        "width": 1280,
+        "bytes": 72074
+      },
+      {
+        "name": "denver-patterned-tile-freestanding-tub-remodel-1920.webp",
+        "width": 1920,
+        "bytes": 138012
+      },
+      {
+        "name": "denver-patterned-tile-freestanding-tub-remodel-1280.jpg",
+        "width": 1280,
+        "bytes": 105667
+      }
+    ]
+  },
+  {
+    "id": "tealVanity",
+    "source": "website images/Website Images Assets/denver-teal-double-vanity-bathroom-remodel-4k-16x9.jpg",
+    "originalBytes": 1224316,
+    "alt": "Teal double vanity with oval mirrors and wall sconces",
+    "files": [
+      {
+        "name": "denver-teal-double-vanity-bathroom-remodel-480.webp",
+        "width": 480,
+        "bytes": 10012
+      },
+      {
+        "name": "denver-teal-double-vanity-bathroom-remodel-800.webp",
+        "width": 800,
+        "bytes": 22188
+      },
+      {
+        "name": "denver-teal-double-vanity-bathroom-remodel-1280.webp",
+        "width": 1280,
+        "bytes": 42678
+      },
+      {
+        "name": "denver-teal-double-vanity-bathroom-remodel-1920.webp",
+        "width": 1920,
+        "bytes": 82874
+      },
+      {
+        "name": "denver-teal-double-vanity-bathroom-remodel-1280.jpg",
+        "width": 1280,
+        "bytes": 83109
+      }
+    ]
+  },
+  {
+    "id": "tealRoom",
+    "source": "website images/Website Images Assets/denver-teal-vanity-luxury-bathroom-renovation-4k-16x9.jpg",
+    "originalBytes": 1028147,
+    "alt": "Teal vanity, glass shower, and freestanding bathtub in a light bathroom",
+    "files": [
+      {
+        "name": "denver-teal-vanity-luxury-bathroom-renovation-480.webp",
+        "width": 480,
+        "bytes": 9334
+      },
+      {
+        "name": "denver-teal-vanity-luxury-bathroom-renovation-800.webp",
+        "width": 800,
+        "bytes": 19622
+      },
+      {
+        "name": "denver-teal-vanity-luxury-bathroom-renovation-1280.webp",
+        "width": 1280,
+        "bytes": 37308
+      },
+      {
+        "name": "denver-teal-vanity-luxury-bathroom-renovation-1920.webp",
+        "width": 1920,
+        "bytes": 69276
+      },
+      {
+        "name": "denver-teal-vanity-luxury-bathroom-renovation-1280.jpg",
+        "width": 1280,
+        "bytes": 68423
+      }
+    ]
+  },
+  {
+    "id": "marbleShower",
+    "source": "website images/Website Images Assets/denver-marble-walk-in-shower-remodel-4k-16x9.jpg",
+    "originalBytes": 1110293,
+    "alt": "Shower walls with veined white tile and a built-in niche",
+    "files": [
+      {
+        "name": "denver-marble-walk-in-shower-remodel-480.webp",
+        "width": 480,
+        "bytes": 10254
+      },
+      {
+        "name": "denver-marble-walk-in-shower-remodel-800.webp",
+        "width": 800,
+        "bytes": 21856
+      },
+      {
+        "name": "denver-marble-walk-in-shower-remodel-1280.webp",
+        "width": 1280,
+        "bytes": 41518
+      },
+      {
+        "name": "denver-marble-walk-in-shower-remodel-1920.webp",
+        "width": 1920,
+        "bytes": 77718
+      },
+      {
+        "name": "denver-marble-walk-in-shower-remodel-1280.jpg",
+        "width": 1280,
+        "bytes": 69588
+      }
+    ]
+  },
+  {
+    "id": "tubTile",
+    "source": "website images/Website Images Assets/denver-marble-tub-shower-renovation-4k-16x9.jpg",
+    "originalBytes": 1288576,
+    "alt": "Tiled bathtub surround with a niche and horizontal support bar",
+    "files": [
+      {
+        "name": "denver-marble-tub-shower-renovation-480.webp",
+        "width": 480,
+        "bytes": 8928
+      },
+      {
+        "name": "denver-marble-tub-shower-renovation-800.webp",
+        "width": 800,
+        "bytes": 24976
+      },
+      {
+        "name": "denver-marble-tub-shower-renovation-1280.webp",
+        "width": 1280,
+        "bytes": 55772
+      },
+      {
+        "name": "denver-marble-tub-shower-renovation-1920.webp",
+        "width": 1920,
+        "bytes": 116636
+      },
+      {
+        "name": "denver-marble-tub-shower-renovation-1280.jpg",
+        "width": 1280,
+        "bytes": 77470
+      }
+    ]
+  },
+  {
+    "id": "whiteVanity",
+    "source": "website images/Website Images Assets/denver-white-vanity-bathroom-remodel-4k-16x9.jpg",
+    "originalBytes": 1637853,
+    "alt": "White bathroom vanity beneath a framed mirror",
+    "files": [
+      {
+        "name": "denver-white-vanity-bathroom-remodel-480.webp",
+        "width": 480,
+        "bytes": 7228
+      },
+      {
+        "name": "denver-white-vanity-bathroom-remodel-800.webp",
+        "width": 800,
+        "bytes": 21114
+      },
+      {
+        "name": "denver-white-vanity-bathroom-remodel-1280.webp",
+        "width": 1280,
+        "bytes": 64144
+      },
+      {
+        "name": "denver-white-vanity-bathroom-remodel-1920.webp",
+        "width": 1920,
+        "bytes": 169272
+      },
+      {
+        "name": "denver-white-vanity-bathroom-remodel-1280.jpg",
+        "width": 1280,
+        "bytes": 79420
+      }
+    ]
+  },
+  {
+    "id": "floor",
+    "source": "website images/Website Images Assets/denver-bathroom-flooring-and-vanity-remodel-4k-16x9.jpg",
+    "originalBytes": 1839669,
+    "alt": "Pale wood-look bathroom flooring alongside a white vanity",
+    "files": [
+      {
+        "name": "denver-bathroom-flooring-and-vanity-remodel-480.webp",
+        "width": 480,
+        "bytes": 12014
+      },
+      {
+        "name": "denver-bathroom-flooring-and-vanity-remodel-800.webp",
+        "width": 800,
+        "bytes": 32170
+      },
+      {
+        "name": "denver-bathroom-flooring-and-vanity-remodel-1280.webp",
+        "width": 1280,
+        "bytes": 78592
+      },
+      {
+        "name": "denver-bathroom-flooring-and-vanity-remodel-1920.webp",
+        "width": 1920,
+        "bytes": 197164
+      },
+      {
+        "name": "denver-bathroom-flooring-and-vanity-remodel-1280.jpg",
+        "width": 1280,
+        "bytes": 93769
+      }
+    ]
+  }
+]

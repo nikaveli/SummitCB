@@ -99,6 +99,10 @@ function applyHeaders(request,assetResponse) {
 export default {
   async fetch(request,env,ctx) {
     const url=new URL(request.url);
+    if(url.hostname==='summitcustombuilders.net'&&(request.method==='GET'||request.method==='HEAD')) {
+      url.hostname='www.summitcustombuilders.net';
+      return Response.redirect(url,301);
+    }
     if(url.pathname==='/api/inquiries')return handleInquiry(request,env,ctx);
     const redirect=manifest.redirects[url.pathname+url.search]||manifest.redirects[url.pathname];
     if(redirect)return Response.redirect(new URL(redirect,url.origin),301);

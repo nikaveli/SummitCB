@@ -65,6 +65,16 @@ Deploy the Node application with `dist/`, `src/`, `server.mjs`, and `package.jso
 
 After configuring production, build and restart. Confirm real inquiry delivery, persistent storage, canonical hostname handling at the proxy, and indexing settings. The application reports saved inquiries; it does not guarantee notification delivery if an external service fails. Do not use ephemeral serverless storage for the inbox.
 
+### Cloudflare production deployment
+
+The production site runs as a Cloudflare Worker with Static Assets. `wrangler.jsonc` attaches the Worker to both `summitcustombuilders.net/*` and `www.summitcustombuilders.net/*`; the `workers.dev` hostname remains noindex even when the production build is indexable. Contact inquiries are stored in the bound D1 database before a success response is shown.
+
+```sh
+npm run deploy:production
+```
+
+Wrangler must be authenticated to the correct Cloudflare account. Before the first deployment, create the D1 database, apply `cloudflare/schema.sql`, update its ID in `wrangler.jsonc`, and add a `RATE_LIMIT_SALT` Worker secret. Configure `INQUIRY_WEBHOOK_URL` and `INQUIRY_WEBHOOK_TOKEN` as Worker secrets only after choosing and testing a real notification destination. Keep the old hosting and DNS records intact until the Cloudflare preview, routes, and nameserver cutover have been verified.
+
 ## Checks
 
 ```sh

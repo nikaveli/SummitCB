@@ -8,6 +8,8 @@
   },
   "scripts": {
     "build": "node --env-file-if-exists=.env scripts/build.mjs",
+    "build:production": "PUBLIC_INDEXING=true SITE_URL=https://www.summitcustombuilders.net WRITE_REPORTS=false node scripts/build.mjs",
+    "deploy:production": "npm run check && npm run build:production && wrangler deploy",
     "start": "node --env-file-if-exists=.env server.mjs",
     "dev": "node --env-file-if-exists=.env scripts/build.mjs && node --env-file-if-exists=.env --watch server.mjs",
     "test": "node --test tests/*.test.mjs",
@@ -17,5 +19,8 @@
     "videos": "node scripts/prepare-videos.mjs",
     "build:pages": "node scripts/build-pages.mjs",
     "check:pages": "node scripts/check-pages.mjs"
+  },
+  "devDependencies": {
+    "wrangler": "^4.135.0"
   }
 }

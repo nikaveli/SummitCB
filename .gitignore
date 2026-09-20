@@ -11,3 +11,4 @@ Logo/
 brand-info/
 .env.*
 !.env.example
+backups/

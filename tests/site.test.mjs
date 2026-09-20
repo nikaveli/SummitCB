@@ -7,6 +7,7 @@ import { fileURLToPath } from 'node:url';
 import { createServer } from '../server.mjs';
 import { deliverInquiry, readInquiries } from '../src/inquiries.mjs';
 import { shell } from '../src/render.mjs';
+import worker from '../worker/index.mjs';
 
 const root=fileURLToPath(new URL('../',import.meta.url));
 const dist=path.join(root,'dist');
@@ -24,9 +25,19 @@ test('Every page has one H1, unique metadata, canonical, and valid structured da
     assert.ok(html.includes('<html lang="en">'),url);
     assert.ok(html.includes(`rel="canonical" href="${manifest.siteUrl}${url}"`),url);
     assert.match(html,/<meta name="description" content="[^"]+">/);
+    if(!byPath.get(url).noindex) {
+      assert.ok(byPath.get(url).title.length>=30&&byPath.get(url).title.length<=60,`${url} title length`);
+      assert.ok(byPath.get(url).description.length>=120&&byPath.get(url).description.length<=160,`${url} description length`);
+    }
+    assert.match(html,/name="robots" content="(?:index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1|noindex, follow)"/);
+    assert.match(html,/name="twitter:title"/);assert.match(html,/property="og:locale" content="en_US"/);
+    assert.match(html,/name="google-site-verification" content="[^"]+"/);
     const schema=JSON.parse(html.match(/<script type="application\/ld\+json">(.*?)<\/script>/s)[1]);
-    assert.equal(schema['@graph'].filter(x=>x['@type']==='GeneralContractor').length,1);
+    const business=schema['@graph'].find(x=>x['@type']==='GeneralContractor');assert.ok(business);assert.ok(business.description&&business.contactPoint&&business.logo&&business.sameAs?.length);
+    assert.ok(business.sameAs.includes('https://www.facebook.com/summitcustombuildersinc/'),`${url} Facebook profile missing from business schema`);
+    assert.ok(html.includes('href="https://www.facebook.com/summitcustombuildersinc/"'),`${url} Facebook footer link missing`);
     if(byPath.get(url).type==='guide')assert.equal(schema['@graph'].filter(x=>x['@type']==='Article').length,1);
+    if(['service','local-service'].includes(byPath.get(url).type))assert.equal(schema['@graph'].filter(x=>x['@type']==='Service'&&x.description).length,1);
     assert.ok(!html.includes('SNJ Contracting'),url);
     assert.ok(!html.includes('561-779-9423'),url);
   }
@@ -53,12 +64,22 @@ test('Confirmation and privacy stay out of sitemap; production is indexable and 
   const xml=await readFile(path.join(dist,'sitemap.xml'),'utf8');
   assert.ok(!xml.includes('/thank-you/'));assert.ok(!xml.includes('/privacy-policy/'));
   for(const p of manifest.pages.filter(p=>!p.noindex))assert.ok(xml.includes(manifest.siteUrl+p.path),p.path);
+  assert.equal([...xml.matchAll(/<image:image>/g)].length,manifest.pages.filter(p=>!p.noindex).length);
   const previous=process.env.PUBLIC_INDEXING;
   try {
     process.env.PUBLIC_INDEXING='true';assert.match(shell({path:'/',title:'Test',description:'Test'},'<h1>Test</h1>'),/content="index, follow/);
     assert.match(shell({path:'/thank-you/',title:'Thanks',description:'Saved',noindex:true},'<h1>Thanks</h1>'),/content="noindex, follow/);
     process.env.PUBLIC_INDEXING='false';assert.match(shell({path:'/',title:'Test',description:'Test'},'<h1>Test</h1>'),/content="noindex, follow/);
   }finally {if(previous===undefined)delete process.env.PUBLIC_INDEXING;else process.env.PUBLIC_INDEXING=previous;}
+});
+test('Cloudflare worker permanently canonicalizes HTTPS and www in one hop',async()=>{
+  const env={ASSETS:{fetch:async()=>new Response('asset')}};const ctx={waitUntil(){}};
+  for(const [from,to] of [
+    ['http://summitcustombuilders.net/home-additions/?utm_source=test','https://www.summitcustombuilders.net/home-additions/?utm_source=test'],
+    ['http://www.summitcustombuilders.net/our-process/','https://www.summitcustombuilders.net/our-process/'],
+    ['https://summitcustombuilders.net/blog/','https://www.summitcustombuilders.net/blog/']
+  ]) {const result=await worker.fetch(new Request(from),env,ctx);assert.equal(result.status,301,from);assert.equal(result.headers.get('location'),to,from);}
+  const canonical=await worker.fetch(new Request('https://www.summitcustombuilders.net/'),env,ctx);assert.equal(canonical.status,200);assert.equal(canonical.headers.get('strict-transport-security'),'max-age=31536000');
 });
 
 const valid={name:'Test Homeowner',email:'test@example.com',phone:'720-555-0123',city:'arvada',service:'additions',timing:'Exploring',message:'Test inquiry: exploring an addition to the home.',landingPath:'/home-additions/',referringHost:'www.google.com',website:''};

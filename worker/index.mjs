@@ -8,6 +8,7 @@ const securityHeaders={
   'X-Content-Type-Options':'nosniff',
   'Referrer-Policy':'strict-origin-when-cross-origin',
   'X-Frame-Options':'DENY',
+  'Strict-Transport-Security':'max-age=31536000',
   'Content-Security-Policy':"default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; media-src 'self' blob:; connect-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'self'"
 };
 
@@ -99,9 +100,10 @@ function applyHeaders(request,assetResponse) {
 export default {
   async fetch(request,env,ctx) {
     const url=new URL(request.url);
-    if(url.hostname==='summitcustombuilders.net'&&(request.method==='GET'||request.method==='HEAD')) {
+    if(url.protocol!=='https:'||url.hostname==='summitcustombuilders.net') {
+      url.protocol='https:';
       url.hostname='www.summitcustombuilders.net';
-      return Response.redirect(url,301);
+      return Response.redirect(url,request.method==='GET'||request.method==='HEAD'?301:308);
     }
     if(url.pathname==='/api/inquiries')return handleInquiry(request,env,ctx);
     const redirect=manifest.redirects[url.pathname+url.search]||manifest.redirects[url.pathname];

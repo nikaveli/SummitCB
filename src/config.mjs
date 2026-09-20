@@ -4,7 +4,12 @@ export const site = {
   url: (process.env.SITE_URL || 'https://www.summitcustombuilders.net').replace(/\/$/, ''),
   phone: '720-431-1056', tel: '+17204311056',
   address: { streetAddress: '825 S. Yates St.', addressLocality: 'Denver', addressRegion: 'CO', postalCode: '80219', addressCountry: 'US' },
-  date: '2026-09-11',
+  googleSiteVerification: '5X7r8sc5fNeSdGv62iEjZRWDejeDHcsyzyo8QAbD9zc',
+  profiles: [
+    'https://www.bbb.org/us/co/denver/profile/remodel-contractors/summit-custom-builders-inc-1296-90268965',
+    'https://www.facebook.com/summitcustombuildersinc/',
+  ],
+  date: '2026-09-20',
 };
 export const paths = {
   home: '/',

@@ -89,7 +89,8 @@ for(const {page,html} of results) {
 }
 await writeFile(path.join(dist,'404.html'),revise(render404()));
 const indexable=pages.filter(p=>!p.noindex);
-await writeFile(path.join(dist,'sitemap.xml'),`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${indexable.map(p=>`<url><loc>${escapeHtml(site.url+p.path)}</loc><lastmod>${site.date}</lastmod></url>`).join('\n')}\n</urlset>\n`);
+const htmlByPath=new Map(results.map(({page,html})=>[page.path,html]));
+await writeFile(path.join(dist,'sitemap.xml'),`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n${indexable.map(p=>{const image=htmlByPath.get(p.path).match(/<meta property="og:image" content="([^"]+)"/)[1];return `<url><loc>${escapeHtml(site.url+p.path)}</loc><lastmod>${p.date||site.date}</lastmod><image:image><image:loc>${escapeHtml(image)}</image:loc></image:image></url>`;}).join('\n')}\n</urlset>\n`);
 await writeFile(path.join(dist,'robots.txt'),process.env.PUBLIC_INDEXING==='true'?`User-agent: *\nAllow: /\nDisallow: /api/\nSitemap: ${site.url}/sitemap.xml\n`:'User-agent: *\nDisallow: /\n');
 const manifest={assetRevisions,built:site.date,indexing:process.env.PUBLIC_INDEXING==='true',siteUrl:site.url,pages:pages.map(p=>({path:p.path,title:p.title,description:p.description,type:p.type,noindex:!!p.noindex,service:p.service,city:p.city})),redirects};
 await writeFile(path.join(dist,'manifest.json'),JSON.stringify(manifest,null,2));

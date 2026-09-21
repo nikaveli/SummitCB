@@ -132,6 +132,39 @@
     ]
   },
   {
+    "id": "attachedLiving",
+    "source": "website images/Website Images Assets/denver-home-addition-exterior-framing-4k-16x9.jpg",
+    "originalBytes": 2053603,
+    "alt": "Attached living space under construction beside an existing brick home",
+    "files": [
+      {
+        "name": "denver-home-addition-exterior-framing-480.webp",
+        "width": 480,
+        "bytes": 27128
+      },
+      {
+        "name": "denver-home-addition-exterior-framing-800.webp",
+        "width": 800,
+        "bytes": 71736
+      },
+      {
+        "name": "denver-home-addition-exterior-framing-1280.webp",
+        "width": 1280,
+        "bytes": 198610
+      },
+      {
+        "name": "denver-home-addition-exterior-framing-1920.webp",
+        "width": 1920,
+        "bytes": 426528
+      },
+      {
+        "name": "denver-home-addition-exterior-framing-1280.jpg",
+        "width": 1280,
+        "bytes": 297571
+      }
+    ]
+  },
+  {
     "id": "windowWork",
     "source": "website images/Website Images Assets/denver-exterior-window-opening-renovation-4k-16x9.jpg",
     "originalBytes": 1830539,

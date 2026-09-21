@@ -17,12 +17,12 @@ export function renderForm(values={}, errors={}) {
       <label for="service">Project type <span>(required)</span><select id="service" name="service" required${attrs('service')}>${options([...services.map(s=>[s.id,s.name]),['unsure','Help me choose']], 'service')}</select>${error('service')}</label>
       <label for="timing">Timing <span>(optional)</span><input id="timing" name="timing" maxlength="150" placeholder="Exploring, this year, or a specific goal" value="${value('timing')}"${attrs('timing')}>${error('timing')}</label>
     </div>
-    <label for="message">What would you like to change? <span>(required)</span><textarea id="message" name="message" rows="5" minlength="20" maxlength="5000" required placeholder="Tell us about your home, the space you need, and your priorities."${attrs('message')}>${value('message')}</textarea>${error('message')}</label>
+    <label for="message">What would you like to build or change? <span>(required)</span><textarea id="message" name="message" rows="5" minlength="20" maxlength="5000" required placeholder="Tell us who the space should serve, whether you are considering an addition or ADU, and your priorities."${attrs('message')}>${value('message')}</textarea>${error('message')}</label>
     <div class="honeypot" aria-hidden="true"><label for="website">Leave this field empty<input id="website" name="website" tabindex="-1" autocomplete="off"></label></div>
     <input type="hidden" name="landingPath" value="${value('landingPath') || paths.contact}">
     <input type="hidden" name="referringHost" value="${value('referringHost')}">
     <p class="form-note">By sending this form, you agree that Summit may contact you about your project. Read our <a href="${paths.privacy}">privacy policy</a>. Please do not include sensitive medical or financial information.</p>
-    <button class="button" type="submit">Request a consultation <span aria-hidden="true">↗</span></button>
+    <button class="button" type="submit">Discuss your project <span aria-hidden="true">↗</span></button>
     <p class="form-note">Prefer a conversation? Call <a href="tel:+17204311056">720-431-1056</a>.</p>
   </form>`;
 }

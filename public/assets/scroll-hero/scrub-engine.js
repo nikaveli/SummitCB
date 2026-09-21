@@ -57,11 +57,11 @@
      --sw-font-display / --sw-font-body
 
    REQUIREMENTS ON YOUR ASSETS
-     - clips encoded native-res, crf~20, -g 8, +faststart, no audio (see pipeline.md)
+     - clips encoded for fast local scrubbing, frequent keyframes, +faststart, no audio
      - connectors' endpoints are the neighbouring dives' ACTUAL frames (see SKILL Step 5)
      - (optional) mobile variants at ~720p, -g 4 for smoother phone scrubbing
-   The engine uses native byte-range media loading and scrubs currentTime; it does
-   NOT depend on HTTP byte-range support.
+   The engine downloads each nearby clip once into a browser Blob and scrubs it
+   locally, so smooth seeking does not depend on a host's byte-range behavior.
    ========================================================================== */
 
 function mountScrollWorld(container, config) {
@@ -219,8 +219,9 @@ function mountScrollWorld(container, config) {
       return;
     }
     s.loading = true; s.ready = false; s.url = url;
-    // Give Safari a real media element immediately, before the first swipe.
-    // Native byte-range loading avoids waiting for a complete Blob download.
+    // Give the scene a real media element immediately, then fetch the compact
+    // scrub asset once. Local Blob playback makes every later seek independent
+    // of CDN byte-range behavior and prevents repeated network stalls.
     const v = document.createElement('video');
     v.className = 'sw-scene__video';
     v.muted = true; v.defaultMuted = true; v.playsInline = true; v.preload = 'auto';
@@ -237,21 +238,47 @@ function mountScrollWorld(container, config) {
       v.classList.add('is-ready'); s.el.classList.add('has-clip');
       // Keep the previous orientation's painted frame until its replacement is ready.
       s.el.querySelectorAll('video').forEach(old => {
-        if (old !== v) { old.pause(); old.removeAttribute('src'); old.load(); old.remove(); }
+        if (old !== v) {
+          old.pause(); old.removeAttribute('src'); old.load();
+          if (old._swBlobUrl) URL.revokeObjectURL(old._swBlobUrl);
+          old.remove();
+        }
       });
     };
     // These events guarantee a decoded current frame. A paused video may never
     // produce another requestVideoFrameCallback after loadeddata.
     const painted = () => requestAnimationFrame(reveal);
     v.addEventListener('seeked', painted);
+    v.addEventListener('canplay', painted);
     v.addEventListener('loadeddata', () => { painted(); if (userReady && s.visible) primeVideo(v); });
     v.addEventListener('error', () => {
       if (s.video !== v) return;
-      s.ready = false; s.el.classList.remove('has-clip');
-      s.el.querySelectorAll('video').forEach(old => { old.pause(); old.remove(); });
+      s.ready = false; s.loading = false; s.hasClip = false; s.el.classList.remove('has-clip');
+      s.el.querySelectorAll('video').forEach(old => {
+        old.pause();
+        if (old._swBlobUrl) URL.revokeObjectURL(old._swBlobUrl);
+        old.remove();
+      });
+      s.video = null;
     });
     s.el.appendChild(v); s.video = v; s.hasClip = true;
-    v.src = url; v.load();
+    if (s.fetchAbort) s.fetchAbort.abort();
+    const controller = new AbortController(); s.fetchAbort = controller;
+    fetch(url, { signal: controller.signal, cache: 'force-cache' })
+      .then(response => {
+        if (!response.ok) throw new Error(`Hero clip returned ${response.status}`);
+        return response.blob();
+      })
+      .then(blob => {
+        if (s.video !== v) return;
+        const blobUrl = URL.createObjectURL(blob);
+        v._swBlobUrl = blobUrl; v.src = blobUrl; v.load();
+      })
+      .catch(error => {
+        if (error.name === 'AbortError' || s.video !== v) return;
+        s.ready = false; s.loading = false; s.hasClip = false; s.video = null;
+        v.remove();
+      });
     if (userReady && s.visible) primeVideo(v);
   }
 
@@ -322,6 +349,15 @@ function mountScrollWorld(container, config) {
     const eps = isMobile() ? 0.02 : 0.008;   // coarser seek step on phones = fewer decodes
     for (let i = 0; i < NSEG; i++) {
       const s = SEGMENTS[i];
+      // Reconcile media readiness every frame as a safety net. A fully cached
+      // asset can advance readyState before a deferred media event is observed;
+      // without this check the clip can remain painted at time zero until a
+      // later scroll happens to retrigger the path.
+      if (s.video && !s.ready && s.video.readyState >= 1) s.ready = true;
+      if (s.video && s.video.readyState >= 2 && !s.video.seeking) {
+        s.video.classList.add('is-ready');
+        s.el.classList.add('has-clip');
+      }
       if (!s.hasClip || !s.ready || !s.video) continue;
       // Never queue a seek while the decoder is still resolving the last one.
       // On phones a fast flick would otherwise pile up seeks and freeze the clip;

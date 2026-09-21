@@ -23,7 +23,7 @@ test('Every page has responsive photography; image and share-preview URLs exist'
 });
 test('Prepared web images stay below the full-size asset budget',async()=>{
   const report=JSON.parse(await readFile(path.join(root,'data/photo-assets.json'),'utf8'));
-  assert.equal(report.length,27);
+  assert.equal(report.length,28);
   for(const p of report){
     assert.equal(p.files.length,5);
     for(const file of p.files){

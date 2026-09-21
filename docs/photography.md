@@ -1,6 +1,6 @@
 # Website photography
 
-The 27 final JPEGs supplied in `website images/Website Images Assets/` are now used across all 54 pages. The homepage now uses the approved scroll hero; other page introductions are unchanged. The lower “More spaces. More details.” section now uses six newer supplied photographs instead of legacy website images.
+The 28 final JPEGs supplied in `website images/Website Images Assets/` are now used across all 54 pages. The homepage now uses the approved scroll hero; other page introductions are unchanged. The lower “More spaces. More details.” section now uses six newer supplied photographs instead of legacy website images. The Clayton exterior-framing photograph also appears in the homepage project preview, the Home Additions & ADUs detail pair, and the full project gallery.
 
 ## Art direction
 

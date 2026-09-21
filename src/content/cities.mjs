@@ -1,20 +1,20 @@
 export const cities = [
   {
     id:'denver', name:'Denver', eyebrow:'City & County of Denver',
-    intro:'A Denver remodel starts with the way you want to live—and the particular home you want to keep. Summit builds additions and renovates kitchens, bathrooms, and connected living spaces across the city.',
-    focus:'Permit sequencing, existing-home systems, and historic-property questions.',
+    intro:'Create more room without leaving the Denver home and neighborhood you value. Summit builds home additions and ADUs, with remodeling services that connect the new space to everyday life.',
+    focus:'Addition and ADU feasibility, permit sequencing, existing-home systems, and historic-property questions.',
     sections:[
       ['Identify the review path before setting a start date', 'An interior update and a structural addition can follow different review paths. Denver provides separate resources for residential plan review and certain quicker permits. Describe the complete scope, including structural, electrical, plumbing, and mechanical changes, before deciding which applications are needed. Use the city’s current guidance for scheduling; a general average is not a commitment for your project.'],
       ['Look beyond the room being remodeled', 'A bungalow, a Denver Square, a ranch, and a home with earlier additions can have very different routes for new plumbing, ducts, and wiring. Gather prior plans and permit records if available. Ask what the project team needs to inspect before assuming a wall can move, a floor can carry a new load, or existing utilities can support the new layout.'],
       ['Check historic status when the exterior changes', 'If the property is locally designated or within a historic district, ask Denver Landmark Preservation whether the work needs design review. A kitchen or bathroom project can touch the exterior through a new window or exhaust outlet. Discuss those details while developing the layout rather than after cabinets or fixtures are ordered.'],
       ['Tie an addition into the site', 'A larger house changes roof area, drainage, and the relationship to the yard. Establish property boundaries and applicable zoning before relying on a sketch of the available space. Include access for construction and the protection of occupied rooms in the scope.']
     ], sources:['denver'], guides:['planning-addition','addition-timeline','older-homes','asbestos'],
-    question:'Does every Denver remodel follow the same permit process?', answer:'No. The city’s review path depends on the work. Ask the permitting team to assess the full scope and any zoning or historic-review requirements for the property.'
+    question:'Does every Denver addition or ADU follow the same permit process?', answer:'No. The city’s review path depends on the property and the work. Ask the permitting team to assess the full scope and any zoning, utility, or historic-review requirements.'
   },
   {
     id:'arvada', name:'Arvada', eyebrow:'Arvada, Colorado',
-    intro:'Make room for what comes next in your Arvada home. Summit connects additions and major renovations with the kitchen, bathroom, and access improvements that make a house easier to live in.',
-    focus:'Interior permit scope, historic-area review, and private design approvals.',
+    intro:'Make room for what comes next on your Arvada property. Summit builds home additions and ADUs, then coordinates the interior improvements that help the new and existing spaces work together.',
+    focus:'Addition and ADU feasibility, historic-area review, and private design approvals.',
     sections:[
       ['Match the plan to the home you have', 'Start with the building’s actual condition and renovation history. An older cottage may need a different approach to utilities and framing than a ranch or a recently built home. Gather records and identify the problems you want to solve. A large lot, newer construction date, or open-looking floor plan does not establish what changes are feasible.'],
       ['Use Arvada’s interior-remodel guidance', 'Arvada provides a dedicated residential interior-remodel resource. Use it to understand submittals and discuss any plan changes during construction with the project team. Decide whether the scope stays within existing rooms or includes structural work and an addition, because that distinction affects the information needed for review.'],
@@ -25,8 +25,8 @@ export const cities = [
   },
   {
     id:'wheat-ridge', name:'Wheat Ridge', eyebrow:'Wheat Ridge, Colorado',
-    intro:'Keep the character and location you value while making your Wheat Ridge home fit today’s routines. Summit helps connect larger renovations and additions with the details that make individual rooms work.',
-    focus:'Existing systems, addition feasibility, and separate utility coordination.',
+    intro:'Keep the Wheat Ridge location you value while creating space for today’s household and tomorrow’s needs. Summit plans and builds home additions and ADUs with the site, utilities, and existing home in view.',
+    focus:'Addition and ADU feasibility, existing systems, and separate utility coordination.',
     sections:[
       ['Get useful information from the existing house', 'If you are remodeling a ranch or another older home, look at the renovation history as well as the year it was built. Electrical capacity, plumbing condition, ventilation routes, and prior alterations can change the scope. Treat older materials as a reason to assess the work area, not as proof that a particular problem exists.'],
       ['A generous yard is a starting point, not a building envelope', 'Before comparing an addition with a rearranged interior, establish boundaries, easements, setbacks, drainage, and how construction can reach the work area. A room that looks easy to extend on paper may connect to a roof or foundation in a more involved way. Evaluate those connections before comparing finish prices.'],
@@ -37,8 +37,8 @@ export const cities = [
   },
   {
     id:'lakewood', name:'Lakewood', eyebrow:'Lakewood, Colorado',
-    intro:'A Lakewood renovation can make an established home feel ready for a new chapter. Summit works on additions, coordinated home improvements, kitchens, bathrooms, and changes for easier everyday access.',
-    focus:'Current zoning, utility-provider boundaries, and whole-home coordination.',
+    intro:'A home addition or ADU can give your Lakewood property room for its next chapter. Summit coordinates new living space with the site, utilities, existing home, and any related interior improvements.',
+    focus:'Addition and ADU feasibility, current zoning, utility-provider boundaries, and whole-home coordination.',
     sections:[
       ['Confirm the rules for the proposal you are making', 'Before paying for a detailed expansion design, ask Lakewood Planning to confirm the property’s current zoning and the standards that apply to your proposed use. Older articles or saved zoning maps may not describe the rules in effect when you apply. Establish the permitted building envelope and review steps for the specific address.'],
       ['Ask who supplies water and who handles wastewater', 'Lakewood-area service can involve independent water or sanitation districts. Identify the providers using the property’s bills and official mapping resources. Adding fixtures, changing a service, or expanding the home may prompt questions from those providers. Ask each organization about its role, requirements, and any separate charges.'],
@@ -49,8 +49,8 @@ export const cities = [
   },
   {
     id:'morrison', name:'Morrison', eyebrow:'Morrison & its surrounding service area',
-    intro:'For a Morrison-area remodel, the first useful detail is the property address. Summit helps homeowners plan additions and renovations with the site, existing home, and governing jurisdiction in view.',
-    focus:'Town versus county jurisdiction, site constraints, and foothills infrastructure.',
+    intro:'For a Morrison-area home addition or ADU, the first useful detail is the property address. Summit helps homeowners plan new living space with the site, existing home, utilities, and governing jurisdiction in view.',
+    focus:'Addition and ADU feasibility, town versus county jurisdiction, site constraints, and foothills infrastructure.',
     callout:'A Morrison mailing address does not establish that the property is inside the Town of Morrison. Check municipal status before choosing a permit checklist.',
     sections:[
       ['Start with municipal status', 'Use Jefferson County’s address lookup to check whether the parcel is incorporated or unincorporated. Then confirm the result with the relevant planning office. For a property inside the Town of Morrison, use the town’s residential and addition checklists. For an unincorporated property, begin with the county’s requirements.'],
@@ -62,8 +62,8 @@ export const cities = [
   },
   {
     id:'golden', name:'Golden', eyebrow:'Golden, Colorado',
-    intro:'A Golden remodel should respect the home you value and the setting around it. Summit brings additions, whole-home changes, kitchens, and bathrooms into a construction plan that begins with the right property questions.',
-    focus:'Municipal boundaries, historic designation, and foundation planning.',
+    intro:'A Golden home addition or ADU should respect the home, property, and setting you value. Summit begins with the right jurisdiction, site, and construction questions before new living space takes shape.',
+    focus:'Addition and ADU feasibility, municipal boundaries, historic designation, and foundation planning.',
     callout:'Check municipal status and historic designation before designing exterior changes. A Golden postal address and a home’s age are useful clues, not final determinations.',
     sections:[
       ['Confirm whether the property is inside Golden', 'Jefferson County’s address lookup identifies municipal status. Use that result to establish whether Golden or the county is the starting point for permitting. Do not apply unincorporated county rules to a city property, or assume city rules apply simply because “Golden” appears in the mailing address.'],
@@ -73,7 +73,7 @@ export const cities = [
     ], sources:['address','golden','geology','ddba'], guides:['soils','jeffco','build-up-out','kitchen-cost'],
     question:'Does a 50-year-old Golden home automatically need a public hearing?', answer:'No. Age alone does not establish designation or the review path. Ask Golden Planning about the actual property and proposed scope.'
   }
-].map(c=>({...c,path:`/service-areas/${c.id}-co/`, title:`${c.name}, CO Home Remodeling | Summit Custom Builders`, description:`Plan home additions, major remodels, kitchens, and bathrooms in ${c.name}, CO. Explore local planning considerations and talk with Summit Custom Builders.`}));
+].map(c=>({...c,path:`/service-areas/${c.id}-co/`, title:`${c.name}, CO Home Additions & ADUs | Summit`, description:`Plan a home addition or ADU in ${c.name}, CO. Explore property-specific questions and discuss construction with Summit Custom Builders.`}));
 export const cityById=Object.fromEntries(cities.map(c=>[c.id,c]));
 
 export const localServices = [

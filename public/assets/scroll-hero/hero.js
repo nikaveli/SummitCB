@@ -4,13 +4,13 @@ const summitJourney = {
   nav: true, atmosphere: false, crossfade: 0.06, contained: true,
   hint: 'Scroll to step inside',
   sections: [
-    { id: 'light', label: '01 — Light', still: '/assets/scroll-hero/light-clean-poster.jpg', clip: '/assets/scroll-hero/light-hq-v3.mp4', clipPortrait: '/assets/scroll-hero/light-hq-v3-portrait.mp4', scroll: 2.4, linger: 0.18,
-      accent: '#CC5F28', eyebrow: 'Home additions & remodeling · Denver', title: 'A home,\nthoughtfully made.', body: 'More light. More possibility. More room for the life you love.' },
-    { id: 'detail', label: '02 — Detail', still: '/assets/scroll-hero/detail-clear-v2-still.png', poster: '/assets/scroll-hero/detail-clear-v2-poster.png', clip: '/assets/scroll-hero/detail-hq-v3.mp4', clipPortrait: '/assets/scroll-hero/detail-hq-v3-portrait.mp4', scroll: 1.6, linger: 0.12,
-      accent: '#CC5F28', eyebrow: 'Considered in every detail', title: 'Beauty you\ncan feel.', body: 'The grain of a cabinet. The edge of a stone. The care that brings it all together.' },
-    { id: 'retreat', label: '03 — Retreat', still: '/assets/scroll-hero/retreat-repaired-v2-still.png', poster: '/assets/scroll-hero/retreat-repaired-v2-poster.png', clip: '/assets/scroll-hero/retreat-hq-v3.mp4', clipPortrait: '/assets/scroll-hero/retreat-hq-v3-portrait.mp4', scroll: 1.8, linger: 0.22,
-      accent: '#CC5F28', eyebrow: 'Your next chapter starts here', title: 'Make room\nfor your life.', body: 'Let’s imagine what your home could become.',
-      cta: { primary: { label: 'Start a conversation ↗', href: 'tel:+17204311056' } } }
+    { id: 'light', label: '01 — Light', still: '/assets/scroll-hero/light-clean-poster.jpg', clip: '/assets/scroll-hero/light-hq-v3-scrub.mp4', clipPortrait: '/assets/scroll-hero/light-hq-v3-portrait.mp4', scroll: 2.4, linger: 0.18,
+      accent: '#CC5F28', eyebrow: 'Home additions & ADUs · Denver Metro', title: 'More space.\nRight where you live.', body: 'Create room for family, independence, and whatever comes next.' },
+    { id: 'detail', label: '02 — Detail', still: '/assets/scroll-hero/detail-clear-v2-still.png', poster: '/assets/scroll-hero/detail-clear-v2-poster.png', clip: '/assets/scroll-hero/detail-hq-v3-scrub.mp4', clipPortrait: '/assets/scroll-hero/detail-hq-v3-portrait.mp4', scroll: 1.6, linger: 0.12,
+      accent: '#CC5F28', eyebrow: 'Built for the way you live', title: 'New space.\nThoughtfully connected.', body: 'From structure and utilities to the details that make the space feel like home.' },
+    { id: 'retreat', label: '03 — Retreat', still: '/assets/scroll-hero/retreat-repaired-v2-still.png', poster: '/assets/scroll-hero/retreat-repaired-v2-poster.png', clip: '/assets/scroll-hero/retreat-hq-v3-scrub.mp4', clipPortrait: '/assets/scroll-hero/retreat-hq-v3-portrait.mp4', scroll: 1.8, linger: 0.22,
+      accent: '#CC5F28', eyebrow: 'Your next chapter starts here', title: 'Addition or ADU.\nLet’s plan it well.', body: 'Start with your property, the people you are making room for, and what the space needs to do.',
+      cta: { primary: { label: 'Plan your addition or ADU ↗', href: '/contact-contractor-renovations-in-denver-lakewood-arvada-morrison-wheat-ridge-golden-co/' } } }
   ], connectors: []
 };
 const root = document.getElementById('home-world');

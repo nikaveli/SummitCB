@@ -8,6 +8,7 @@ export const photos = Object.fromEntries([
   ['framingWide','two-story-home-addition-construction','construction','Two-story home addition under construction beside mature trees','Making room to grow'],
   ['framingMaterials','home-addition-framing-and-materials','construction','Addition framing, sheathing, and stacked construction materials','Connecting new space to an existing home'],
   ['backyard','backyard-home-addition-construction','construction','Backyard view of a home addition during construction','A different view of the building process'],
+  ['attachedLiving','home-addition-exterior-framing','construction','Attached living space under construction beside an existing brick home','New living space taking shape alongside the existing home'],
   ['windowWork','exterior-window-opening-renovation','construction','Work in progress around a large exterior window opening','Opening up an existing home'],
   ['windowDone','replacement-window-home-remodel','construction','Large replacement window in a textured exterior wall','Window replacement'],
   ['whiteKitchen','white-cabinet-kitchen-remodel','kitchen','White kitchen cabinetry, full-height storage, and pale wood flooring','White kitchen remodel'],
@@ -34,7 +35,7 @@ export const photos = Object.fromEntries([
 ].map(([id,file,group,alt,caption])=>[id,{id,file:'denver-'+file,group,alt,caption}]));
 
 export const servicePhotos={
-  additions:['framing','framingWide','backyard'],
+  additions:['framing','attachedLiving','backyard'],
   remodeling:['island','windowDone','whiteKitchen'],
   kitchen:['navyKitchen','quartz','lighting'],
   bathroom:['tealRoom','patternedTile','tubDetail'],
@@ -72,8 +73,8 @@ export const projectDetailPhotos=['whiteKitchen','tealVanity','framingWide','nav
 export function galleryMarkup({curated=false}={}) {
   const groups=[['all','All views'],['kitchen','Kitchens'],['bathroom','Bathrooms'],['construction','Construction']];
   // Wide positions are films; three smaller films sit among the photo pairs.
-  const full=['island','tealRoom','quartz','tubDetail','backyard','peninsula','floor','framing','bathtub','lighting','tubTile','appliances','framingMaterials','marbleShower','navyKitchen','range','cooktop','patternedTile','whiteVanity','windowWork','sink'];
-  const ordered=curated?['island','tealRoom','navyKitchen','patternedTile','quartz','tealVanity','tubDetail','framing']:full;
+  const full=['island','tealRoom','quartz','tubDetail','backyard','attachedLiving','peninsula','floor','framing','bathtub','lighting','tubTile','appliances','framingMaterials','marbleShower','navyKitchen','range','cooktop','patternedTile','whiteVanity','windowWork','sink'];
+  const ordered=curated?['island','tealRoom','navyKitchen','patternedTile','quartz','tealVanity','tubDetail','attachedLiving']:full;
   const filmByPhoto=Object.fromEntries(Object.entries(videoCatalog).map(([key,c])=>[c.photo,key]));
   return `${curated?'':`<div class="photo-filters" role="group" aria-label="Filter the gallery">${groups.map(([value,label])=>`<button type="button" data-photo-filter="${value}" aria-pressed="${value==='all'}">${label}</button>`).join('')}</div>`}<p class="photo-count small" aria-live="polite">${ordered.length} views · Select a photo or video for a closer look. <span class="film-hover-hint">Hover over a video to play.</span></p><div class="photo-gallery${curated?' photo-gallery--curated':''}">${ordered.map((id,i)=>{
     const key=filmByPhoto[id],film=key?videoAssets[key]:null;

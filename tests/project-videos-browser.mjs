@@ -37,10 +37,13 @@ try{
 
   const mobile=await setup({viewport:{width:390,height:844},isMobile:true,hasTouch:true,deviceScaleFactor:3});
   await mobile.page.goto(base+paths.projects);await mobile.page.waitForTimeout(400);assert.equal(mobile.requests.length,0);
-  const mobileFilm=mobile.page.locator('[data-project-film="64th"] .project-film-media');await mobileFilm.scrollIntoViewIfNeeded();await mobileFilm.tap();
+  const mobileFilm=mobile.page.locator('[data-project-film="64th"] .project-film-media');await mobileFilm.scrollIntoViewIfNeeded();
   await mobile.page.waitForFunction(()=>document.querySelector('[data-project-film="64th"] video').currentTime>.15);
-  assert.ok(mobile.requests.every(url=>url.includes('-480-')));await mobileFilm.tap();
-  await mobile.page.waitForFunction(()=>!document.querySelector('[data-project-film="64th"] video').getAttribute('src'));
+  assert.ok(mobile.requests.every(url=>url.includes('-480-')));assert.equal(await mobileFilm.getAttribute('aria-label'),'Pause Puspa project video');
+  const nextMobileFilm=mobile.page.locator('[data-project-film="bannock-01"] .project-film-media');await nextMobileFilm.scrollIntoViewIfNeeded();
+  await mobile.page.waitForFunction(()=>document.querySelector('[data-project-film="bannock-01"] video').currentTime>.15);
+  assert.equal(await mobileFilm.locator('video').getAttribute('src'),null);assert.equal(await mobile.page.locator('video[src]').count(),1);
+  await nextMobileFilm.tap();await mobile.page.waitForFunction(()=>!document.querySelector('[data-project-film="bannock-01"] video').getAttribute('src'));
   assert.equal(await mobile.page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1),false);assert.deepEqual(mobile.errors,[]);await mobile.context.close();
 
   const reduced=await setup({reducedMotion:'reduce'});await reduced.page.goto(base+paths.projects);

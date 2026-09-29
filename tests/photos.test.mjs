@@ -11,6 +11,12 @@ test('Every page has responsive photography; image and share-preview URLs exist'
     assert.ok(html.includes('<picture'),page.path);
     for(const match of html.matchAll(/<picture[\s\S]*?<\/picture>/g)){
       const picture=match[0];
+      if(picture.includes('class="hero-sequence-poster"')){
+        assert.match(picture,/width="1920" height="1080"/);
+        assert.match(picture,/fetchpriority="high" alt="/);
+        for(const src of [...picture.matchAll(/(?:src|srcset)="([^"]+)"/g)].map(result=>result[1]))await stat(path.join(root,'dist',src));
+        continue;
+      }
       assert.match(picture,/width="1280" height="720"/);
       assert.match(picture,/loading="lazy" decoding="async" alt="/);
       const set=picture.match(/srcset="([^"]+)"/)[1].split(', ');

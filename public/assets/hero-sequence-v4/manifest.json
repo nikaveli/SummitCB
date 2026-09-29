@@ -1,0 +1,19 @@
+{
+  "source": "SummitHero.mp4",
+  "duration": 4.791666666666667,
+  "fps": 24,
+  "frames": 115,
+  "desktop": [
+    1920,
+    1080
+  ],
+  "mobile": [
+    810,
+    1080
+  ],
+  "quality": 86,
+  "bytes": {
+    "desktop": 11670646,
+    "mobile": 4674644
+  }
+}

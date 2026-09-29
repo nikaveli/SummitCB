@@ -43,7 +43,7 @@ test('Every page has one H1, unique metadata, canonical, and valid structured da
   }
 });
 test('Internal links and fragment targets resolve directly without redirects',async()=>{
-  for(const [url,html] of documents)for(const match of html.matchAll(/(?:href|src)="([^"]+)"/g)) {
+  for(const [url,html] of documents)for(const match of html.matchAll(/(?:^|\s)(?:href|src)="([^"]+)"/g)) {
     const raw=match[1].replaceAll('&amp;','&');
     if(!raw.startsWith('/')&&!raw.startsWith('#'))continue;
     const link=new URL(raw,'https://test.local'+url);

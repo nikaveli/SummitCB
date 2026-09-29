@@ -1,9 +1,9 @@
 [
   {
     "url": "/index.html",
-    "original": 31316,
-    "brotli": 5555,
-    "gzip": 6039
+    "original": 32085,
+    "brotli": 5786,
+    "gzip": 6294
   },
   {
     "url": "/construction-remodeling-home-additions-home-improvement-lakewood-arvada-morrison-wheat-ridge-golden-co/index.html",
@@ -391,9 +391,9 @@
   },
   {
     "url": "/assets/scroll-hero/hero.css",
-    "original": 18546,
-    "brotli": 4749,
-    "gzip": 5026
+    "original": 5513,
+    "brotli": 1572,
+    "gzip": 1761
   },
   {
     "url": "/assets/scroll-hero/scrub-engine.js",
@@ -403,8 +403,8 @@
   },
   {
     "url": "/assets/scroll-hero/hero.js",
-    "original": 3573,
-    "brotli": 1399,
-    "gzip": 1546
+    "original": 9826,
+    "brotli": 3425,
+    "gzip": 3647
   }
 ]

@@ -17,6 +17,7 @@
     "inquiries": "node --env-file-if-exists=.env scripts/inquiries.mjs",
     "photos": "node scripts/prepare-photos.mjs",
     "videos": "node scripts/prepare-videos.mjs",
+    "videos:projects": "node scripts/prepare-project-videos.mjs",
     "build:pages": "node scripts/build-pages.mjs",
     "check:pages": "node scripts/check-pages.mjs"
   },

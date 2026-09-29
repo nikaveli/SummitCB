@@ -17,6 +17,12 @@ test('Every page has responsive photography; image and share-preview URLs exist'
         for(const src of [...picture.matchAll(/(?:src|srcset)="([^"]+)"/g)].map(result=>result[1]))await stat(path.join(root,'dist',src));
         continue;
       }
+      if(picture.includes('class="project-film-poster"')){
+        assert.match(picture,/width="1280" height="720"/);
+        assert.match(picture,/loading="lazy" decoding="async" alt="/);
+        const src=picture.match(/src="([^"]+)"/)[1];await stat(path.join(root,'dist',src));
+        continue;
+      }
       assert.match(picture,/width="1280" height="720"/);
       assert.match(picture,/loading="lazy" decoding="async" alt="/);
       const set=picture.match(/srcset="([^"]+)"/)[1].split(', ');

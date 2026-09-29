@@ -1,4 +1,5 @@
 document.documentElement.classList.add('js');
+if(document.querySelector('[data-project-film]')) import('/assets/project-videos.js');
 const menu = document.querySelector('.navigation');
 const desktop = matchMedia('(min-width: 1101px)');
 const syncMenu = () => { if (menu) menu.open = desktop.matches; };

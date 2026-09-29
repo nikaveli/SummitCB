@@ -1,0 +1,20 @@
+export const projectVideoGroups = [
+  {id:'puspa',label:'Puspa',title:'Puspa',support:'A brighter, more open kitchen shaped around everyday movement, gathering, and connection to the surrounding rooms.',clips:[{id:'64th',source:'64th.mp4',title:'Puspa'}]},
+  {id:'bannock',label:'Bannock',title:'Bannock',support:'A closer look at the finished spaces and considered details that give this home its renewed sense of arrival.',clips:[{id:'bannock-01',source:'Bannock 01.mp4',title:'Bannock'}]},
+  {id:'chase',label:'Chase',title:'Chase',support:'A full interior remodel that brings the kitchen, bathrooms, and shared living spaces together as one cohesive home.',clips:[{id:'cherry-hills-02',source:'CherryHills 02.mp4',title:'Chase'}]},
+  {id:'human',label:'Human',title:'Human',support:'A light-filled interior transformation pairing open living spaces with sculptural details and calm, spa-like finishes.',clips:[{id:'human',source:'Human.mp4',title:'Human'}]},
+  {id:'marion',label:'Marion',title:'Marion',support:'A home addition with a new basement, creating more living space above and useful square footage below.',clips:[{id:'marion',source:'Marion.mp4',title:'Marion'}]},
+  {id:'marshall',label:'Marshall',title:'Marshall',support:'A pop-top addition that expands the home upward, adding substantial room while preserving the existing footprint.',clips:[{id:'marshall',source:'Marshall.mp4',title:'Marshall',posterTime:8}]},
+  {id:'pearl',label:'Pearl St',title:'Pearl St',support:'A complete interior remodel centered on a refined primary suite and a thoughtfully finished primary bathroom.',clips:[{id:'pearl-1',source:'Pearl_1.mp4',title:'Pearl St'}]},
+  {id:'steele-st',label:'Steele St',title:'Steele St',support:'A custom kitchen renovation where bold cabinetry, clean lines, and practical storage work together.',clips:[{id:'steele-st',source:'SteeleSt.mp4',title:'Steele St'}]},
+  {id:'tanforan',label:'Tanforan',title:'Tanforan',support:'A behind-the-walls look at the construction work that prepares an existing home for its next chapter.',clips:[{id:'tanforan',source:'Tanforan.mp4',title:'Tanforan'}]},
+  {id:'york',label:'York',title:'York',support:'A large home addition that creates substantial new living space, including a reworked kitchen and connected gathering rooms.',clips:[
+    {id:'york-room-kitchen',source:'York-RoomKitchen.mp4',title:'York-RoomKitchen'},
+    {id:'york-addition',source:'York-addition.mp4',title:'York-addition'},
+    {id:'york-kitchen',source:'York-kitchen.mp4',title:'York-kitchen'},
+  ]},
+  {id:'basement',label:'Basement',title:'Basement',support:'A basement project in progress, with structure and utilities coordinated before the finished rooms take shape.',clips:[{id:'basement-01',source:'basement 01.mp4',title:'Basement'}]},
+  {id:'room-addition',label:'Room Addition',title:'Room Addition',support:'An addition designed to extend everyday living and create a more natural connection to the backyard.',clips:[{id:'room-addition-30-sec',source:'roomAddition30sec.mp4',title:'Room Addition'}]},
+  {id:'scb-july',label:'SCB July',title:'SCB July',support:'A whole-home update moving through refreshed rooms, detailed finish work, and improvements inside and out.',clips:[{id:'scb-2-july',source:'scb2July.mp4',title:'SCB July'}]},
+  {id:'video-3',label:'Interior Remodel',title:'Interior Remodel',support:'A warm interior renovation with renewed living spaces and a kitchen planned for how the home is used every day.',clips:[{id:'video-3',source:'video 3.mp4',title:'Interior Remodel'}]},
+];

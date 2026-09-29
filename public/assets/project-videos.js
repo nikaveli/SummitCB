@@ -71,19 +71,31 @@ const initProjectScale=()=>{
   gsap.registerPlugin(ScrollTrigger,Flip);
   document.documentElement.classList.add('has-project-flip');
   let timelines=[];
+  const attachedCopy=scope=>{
+    const section=scope.closest('.project-film-section');
+    const copy=[scope.querySelector(':scope > figcaption')];
+    if(section?.querySelector('[data-project-scale]')===scope)copy.unshift(section.querySelector('.project-film-heading'));
+    return copy.filter(Boolean);
+  };
   const build=()=>{
     timelines.forEach(timeline=>{timeline.scrollTrigger?.kill();timeline.kill();});
     timelines=[];
     scopes.forEach(scope=>{
+      gsap.set(scope.querySelector('[data-flip-element="target"]'),{clearProps:'transform,width,height'});
+      gsap.set(attachedCopy(scope),{clearProps:'transform'});
+    });
+    scopes.forEach(scope=>{
       const wrappers=[...scope.querySelectorAll('[data-flip-element="wrapper"]')];
       const target=scope.querySelector('[data-flip-element="target"]');
       if(wrappers.length<2||!target)return;
-      gsap.set(target,{clearProps:'transform,width,height'});
       const first=wrappers[0],last=wrappers.at(-1);
       const firstRect=first.getBoundingClientRect(),lastRect=last.getBoundingClientRect();
       const distance=Math.max(1,lastRect.top+scrollY+last.offsetHeight/2-(firstRect.top+scrollY+first.offsetHeight/2));
-      const timeline=gsap.timeline({scrollTrigger:{trigger:first,start:'center center',endTrigger:last,end:'center center',scrub:.25,invalidateOnRefresh:true}});
+      const copyDistance=lastRect.top-firstRect.top;
+      const timeline=gsap.timeline({scrollTrigger:{trigger:first,start:'center center',endTrigger:last,end:'center 60%',scrub:.25,invalidateOnRefresh:true}});
       timeline.add(Flip.fit(target,last,{duration:distance,ease:'none'}));
+      const copy=attachedCopy(scope);
+      if(copy.length)timeline.to(copy,{y:copyDistance,duration:distance,ease:'none'},0);
       timelines.push(timeline);
     });
     ScrollTrigger.sort();ScrollTrigger.refresh();scheduleFocus();

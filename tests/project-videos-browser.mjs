@@ -28,11 +28,16 @@ try{
   const first=desktop.page.locator('[data-project-film="64th"] .project-film-media');
   const compactSlot=desktop.page.locator('[data-project-film="64th"] .project-film-scale-slot--compact');
   const wideSlot=desktop.page.locator('[data-project-film="64th"] .project-film-scale-slot--wide');
+  const firstHeading=desktop.page.locator('#project-puspa .project-film-heading');
   await compactSlot.evaluate(element=>scrollTo(0,scrollY+element.getBoundingClientRect().top+element.offsetHeight/2-innerHeight/2));await desktop.page.waitForTimeout(350);
   const compactWidth=(await first.boundingBox()).width;
-  await wideSlot.evaluate(element=>scrollTo(0,scrollY+element.getBoundingClientRect().top+element.offsetHeight/2-innerHeight/2));await desktop.page.waitForTimeout(450);
+  const compactGap=(await first.boundingBox()).y-((await firstHeading.boundingBox()).y+(await firstHeading.boundingBox()).height);
+  await wideSlot.evaluate(element=>scrollTo(0,scrollY+element.getBoundingClientRect().top+element.offsetHeight/2-innerHeight*.6));await desktop.page.waitForTimeout(450);
   const expandedWidth=(await first.boundingBox()).width,wideWidth=(await wideSlot.boundingBox()).width;
   assert.ok(expandedWidth>compactWidth*1.5);assert.ok(Math.abs(expandedWidth-wideWidth)<5);
+  const expandedGap=(await first.boundingBox()).y-((await firstHeading.boundingBox()).y+(await firstHeading.boundingBox()).height);
+  assert.ok(Math.abs(expandedGap-compactGap)<3,'project title and description must stay attached to the video');
+  const indexBox=await desktop.page.locator('.project-index').boundingBox();assert.ok((await firstHeading.boundingBox()).y>=indexBox.y+indexBox.height,'attached project copy must remain below the sticky project menu');
   await first.hover();await desktop.page.waitForFunction(()=>document.querySelector('[data-project-film="64th"] video').currentTime>.15);
   assert.ok(desktop.requests.every(url=>url.includes('-720-')));assert.equal(await first.getAttribute('aria-label'),'Pause Puspa project video');
   assert.equal(await first.locator('video').evaluate(video=>getComputedStyle(video).opacity),'1');

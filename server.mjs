@@ -76,7 +76,7 @@ export async function createServer(options={}) {
       if(pathname!==normalized&&allowed.has(normalized)){send(301,'','text/plain',{'Location':normalized+url.search});return;}
       let file;
       if(allowed.has(pathname))file=path.join(dist,pathname,'index.html');
-      else if(/^\/assets\/(?:scroll-hero\/|hero-sequence-v4\/(?:desktop\/|mobile\/)?)?[a-z0-9.-]+$/.test(pathname)||['/robots.txt','/sitemap.xml'].includes(pathname))file=path.join(dist,pathname);
+      else if(/^\/assets\/(?:scroll-hero\/|hero-sequence-v[45]\/(?:desktop\/|mobile\/)?)?[a-z0-9.-]+$/.test(pathname)||['/robots.txt','/sitemap.xml'].includes(pathname))file=path.join(dist,pathname);
       else {send(404,await readFile(path.join(dist,'404.html')),undefined,{'X-Robots-Tag':'noindex, follow'});return;}
       if(path.extname(file)==='.mp4'&&await serveVideo(req,res,file))return;
       let body,encoding;try {({body,encoding}=await readEncodedFile(file,req.headers['accept-encoding']));}catch {send(404,await readFile(path.join(dist,'404.html')),undefined,{'X-Robots-Tag':'noindex, follow'});return;}

@@ -13,7 +13,8 @@ test('Homepage hero assets are served under CSP and remain isolated from other p
   assert.match(html,/id="home-world"/);assert.match(html,/id="home-content"/);
   assert.match(html,/data-sequence-wrap/);assert.match(html,/data-scroll-end="bottom bottom"/);
   assert(!html.includes('scrub-engine.js'));
-  for(const [file,type] of [['scroll-hero/hero.css','text/css'],['scroll-hero/hero.js','text/javascript'],['hero-sequence-v4/logo.webp','image/webp'],['hero-sequence-v4/desktop/frame-000.webp','image/webp'],['hero-sequence-v4/desktop/frame-114.webp','image/webp'],['hero-sequence-v4/mobile/frame-114.webp','image/webp']]){
+  assert.match(html,/data-frames="137"/);
+  for(const [file,type] of [['scroll-hero/hero.css','text/css'],['scroll-hero/hero.js','text/javascript'],['hero-sequence-v5/logo.webp','image/webp'],['hero-sequence-v5/desktop/frame-000.webp','image/webp'],['hero-sequence-v5/desktop/frame-136.webp','image/webp'],['hero-sequence-v5/mobile/frame-136.webp','image/webp']]){
    const response=await fetch(base+'/assets/'+file,{method:'HEAD'});
    assert.equal(response.status,200,file);assert(response.headers.get('content-type').startsWith(type),file);
   }

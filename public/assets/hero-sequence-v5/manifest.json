@@ -1,0 +1,19 @@
+{
+  "source": "HeroSummit.mp4",
+  "duration": 5.708333333333333,
+  "fps": 24,
+  "frames": 137,
+  "desktop": [
+    1920,
+    1080
+  ],
+  "mobile": [
+    810,
+    1080
+  ],
+  "quality": 86,
+  "bytes": {
+    "desktop": 16833464,
+    "mobile": 7198012
+  }
+}

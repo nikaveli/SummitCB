@@ -2,26 +2,26 @@
   {
     "url": "/index.html",
     "original": 32085,
-    "brotli": 5786,
-    "gzip": 6293
+    "brotli": 5785,
+    "gzip": 6294
   },
   {
     "url": "/construction-remodeling-home-additions-home-improvement-lakewood-arvada-morrison-wheat-ridge-golden-co/index.html",
     "original": 27228,
     "brotli": 5105,
-    "gzip": 5552
+    "gzip": 5551
   },
   {
     "url": "/service-areas/index.html",
     "original": 12891,
-    "brotli": 3225,
-    "gzip": 3513
+    "brotli": 3226,
+    "gzip": 3514
   },
   {
     "url": "/about-home-additions-general-contractor-bathroom-remodeling-ada-remodeling-denver-lakewood-arvada-morrison/index.html",
     "original": 12981,
     "brotli": 3438,
-    "gzip": 3745
+    "gzip": 3746
   },
   {
     "url": "/our-process/index.html",
@@ -31,9 +31,9 @@
   },
   {
     "url": "/our-projects/index.html",
-    "original": 29864,
-    "brotli": 5078,
-    "gzip": 5557
+    "original": 35672,
+    "brotli": 5182,
+    "gzip": 5712
   },
   {
     "url": "/blog/index.html",
@@ -44,14 +44,14 @@
   {
     "url": "/contact-contractor-renovations-in-denver-lakewood-arvada-morrison-wheat-ridge-golden-co/index.html",
     "original": 13210,
-    "brotli": 3445,
+    "brotli": 3447,
     "gzip": 3781
   },
   {
     "url": "/privacy-policy/index.html",
     "original": 11684,
     "brotli": 3209,
-    "gzip": 3500
+    "gzip": 3499
   },
   {
     "url": "/accessibility-statement/index.html",
@@ -62,14 +62,14 @@
   {
     "url": "/thank-you/index.html",
     "original": 10011,
-    "brotli": 2565,
+    "brotli": 2564,
     "gzip": 2814
   },
   {
     "url": "/home-additions/index.html",
     "original": 30411,
     "brotli": 6530,
-    "gzip": 7044
+    "gzip": 7046
   },
   {
     "url": "/custom-home-remodeling-contractor/index.html",
@@ -86,20 +86,20 @@
   {
     "url": "/bathroom-remodeling/index.html",
     "original": 25317,
-    "brotli": 5895,
+    "brotli": 5897,
     "gzip": 6385
   },
   {
     "url": "/general-contractor-denver-co/index.html",
     "original": 24611,
     "brotli": 5740,
-    "gzip": 6189
+    "gzip": 6190
   },
   {
     "url": "/ada-remodeling/index.html",
     "original": 25357,
     "brotli": 6078,
-    "gzip": 6552
+    "gzip": 6554
   },
   {
     "url": "/service-areas/denver-co/index.html",
@@ -111,7 +111,7 @@
     "url": "/service-areas/arvada-co/index.html",
     "original": 24276,
     "brotli": 5233,
-    "gzip": 5667
+    "gzip": 5668
   },
   {
     "url": "/service-areas/wheat-ridge-co/index.html",
@@ -122,7 +122,7 @@
   {
     "url": "/service-areas/lakewood-co/index.html",
     "original": 24528,
-    "brotli": 5321,
+    "brotli": 5323,
     "gzip": 5773
   },
   {
@@ -134,49 +134,49 @@
   {
     "url": "/service-areas/golden-co/index.html",
     "original": 25185,
-    "brotli": 5523,
+    "brotli": 5522,
     "gzip": 5955
   },
   {
     "url": "/home-addition-arvada-co/index.html",
     "original": 19509,
-    "brotli": 4647,
+    "brotli": 4649,
     "gzip": 5014
   },
   {
     "url": "/kitchen-remodeling-kitchen-renovations-arvada-co/index.html",
     "original": 19612,
     "brotli": 4687,
-    "gzip": 5055
+    "gzip": 5053
   },
   {
     "url": "/kitchen-remodeling-golden-co/index.html",
     "original": 19719,
     "brotli": 4839,
-    "gzip": 5206
+    "gzip": 5207
   },
   {
     "url": "/kitchen-renovations-kitchen-remodeling-lakewood-co/index.html",
     "original": 19817,
-    "brotli": 4773,
-    "gzip": 5143
+    "brotli": 4772,
+    "gzip": 5142
   },
   {
     "url": "/bathroom-renovations-denver-co/index.html",
     "original": 19609,
     "brotli": 4706,
-    "gzip": 5086
+    "gzip": 5087
   },
   {
     "url": "/bathroom-remodeling-bathroom-renovations-golden-co/index.html",
     "original": 19950,
-    "brotli": 4825,
+    "brotli": 4826,
     "gzip": 5190
   },
   {
     "url": "/bathroom-remodeling-bathroom-renovations-lakewood-co/index.html",
     "original": 19981,
-    "brotli": 4780,
+    "brotli": 4779,
     "gzip": 5150
   },
   {
@@ -188,26 +188,26 @@
   {
     "url": "/bathroom-renovations-bathroom-remodeling-wheat-ridge-co/index.html",
     "original": 19800,
-    "brotli": 4679,
+    "brotli": 4680,
     "gzip": 5068
   },
   {
     "url": "/blog/planning-home-addition-denver-metro/index.html",
     "original": 19166,
-    "brotli": 4849,
-    "gzip": 5283
+    "brotli": 4851,
+    "gzip": 5284
   },
   {
     "url": "/blog/home-addition-cost-factors/index.html",
     "original": 18581,
-    "brotli": 4620,
-    "gzip": 4996
+    "brotli": 4621,
+    "gzip": 4998
   },
   {
     "url": "/blog/home-addition-timeline/index.html",
     "original": 19029,
     "brotli": 4738,
-    "gzip": 5154
+    "gzip": 5155
   },
   {
     "url": "/blog/building-up-vs-building-out/index.html",
@@ -219,37 +219,37 @@
     "url": "/home-addition-in-golden-co-denver-lakewood-co-arvada-wheat-ridge-and-surrounding-areas/index.html",
     "original": 18817,
     "brotli": 4567,
-    "gzip": 4921
+    "gzip": 4920
   },
   {
     "url": "/blog/planning-whole-home-remodel/index.html",
     "original": 18272,
-    "brotli": 4532,
+    "brotli": 4531,
     "gzip": 4946
   },
   {
     "url": "/blog/whole-home-remodeling-budget/index.html",
     "original": 18507,
-    "brotli": 4590,
+    "brotli": 4589,
     "gzip": 4969
   },
   {
     "url": "/blog/living-at-home-during-remodel/index.html",
     "original": 18127,
-    "brotli": 4516,
-    "gzip": 4914
+    "brotli": 4519,
+    "gzip": 4913
   },
   {
     "url": "/blog/kitchen-remodeling-cost-factors/index.html",
     "original": 15377,
     "brotli": 4072,
-    "gzip": 4407
+    "gzip": 4406
   },
   {
     "url": "/blog/bathroom-remodeling-cost-factors/index.html",
     "original": 15453,
-    "brotli": 4078,
-    "gzip": 4411
+    "brotli": 4075,
+    "gzip": 4410
   },
   {
     "url": "/construction-company-in-arvada-lakewood-co-denver-wheat-ridge-and-nearby-cities/index.html",
@@ -260,14 +260,14 @@
   {
     "url": "/ada-remodeling-in-arvada-denver-golden-lakewood-morrison-and-wheat-ridge-co/index.html",
     "original": 16026,
-    "brotli": 4234,
-    "gzip": 4583
+    "brotli": 4232,
+    "gzip": 4582
   },
   {
     "url": "/blog/colorado-asbestos-before-remodeling/index.html",
     "original": 19118,
-    "brotli": 4809,
-    "gzip": 5178
+    "brotli": 4811,
+    "gzip": 5177
   },
   {
     "url": "/blog/expansive-soils-dipping-bedrock-home-additions/index.html",
@@ -278,50 +278,50 @@
   {
     "url": "/blog/radon-and-home-remodeling/index.html",
     "original": 18571,
-    "brotli": 4627,
-    "gzip": 5039
+    "brotli": 4626,
+    "gzip": 5040
   },
   {
     "url": "/blog/older-home-systems-before-remodeling/index.html",
     "original": 19197,
-    "brotli": 4764,
+    "brotli": 4765,
     "gzip": 5192
   },
   {
     "url": "/blog/jefferson-county-remodeling-property-checks/index.html",
     "original": 19234,
-    "brotli": 4701,
+    "brotli": 4699,
     "gzip": 5064
   },
   {
     "url": "/kitchen-remodeling-in-arvada-denver-golden-lakewood-morrison-and-wheat-ridge-co/index.html",
     "original": 15665,
-    "brotli": 3985,
-    "gzip": 4364
+    "brotli": 3987,
+    "gzip": 4363
   },
   {
     "url": "/home-remodeling-in-arvada-denver-golden-lakewood-morrison-and-wheat-ridge-co/index.html",
     "original": 17563,
-    "brotli": 4202,
-    "gzip": 4568
+    "brotli": 4200,
+    "gzip": 4567
   },
   {
     "url": "/bathroom-remodeling-in-arvada-denver-golden-lakewood-morrison-and-wheat-ridge-co/index.html",
     "original": 15748,
     "brotli": 3971,
-    "gzip": 4310
+    "gzip": 4309
   },
   {
     "url": "/welcome-to-summit-custom-builders/index.html",
     "original": 14431,
-    "brotli": 3694,
-    "gzip": 4003
+    "brotli": 3693,
+    "gzip": 4002
   },
   {
     "url": "/sitemap/index.html",
     "original": 15181,
     "brotli": 3406,
-    "gzip": 3692
+    "gzip": 3691
   },
   {
     "url": "/404.html",
@@ -343,9 +343,9 @@
   },
   {
     "url": "/assets/site.css",
-    "original": 40618,
-    "brotli": 8635,
-    "gzip": 8988
+    "original": 41583,
+    "brotli": 8811,
+    "gzip": 9167
   },
   {
     "url": "/assets/site.js",
@@ -382,6 +382,12 @@
     "original": 44157,
     "brotli": 17339,
     "gzip": 17820
+  },
+  {
+    "url": "/assets/flip.min.js",
+    "original": 25013,
+    "brotli": 9274,
+    "gzip": 9543
   },
   {
     "url": "/assets/split-text.min.js",

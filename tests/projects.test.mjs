@@ -10,6 +10,10 @@ test('Projects page is organized by project name with York grouped together',asy
   assert.equal(projectVideoGroups.flatMap(group=>group.clips).length,16);
   assert.equal((html.match(/class="project-film-section"/g)||[]).length,14);
   assert.equal((html.match(/data-project-film=/g)||[]).length,16);
+  assert.equal((html.match(/data-project-scale/g)||[]).length,16);
+  assert.equal((html.match(/data-flip-element="wrapper"/g)||[]).length,32);
+  assert.equal((html.match(/data-flip-element="target"/g)||[]).length,16);
+  assert.match(html,/\/assets\/flip\.min\.js/);
   assert.equal((html.match(/class="project-index"/g)||[]).length,1);
   assert.equal(projectVideoGroups.find(group=>group.id==='york').clips.length,3);
   for(const [id,title,detail] of [['puspa','Puspa','open kitchen'],['chase','Chase','full interior remodel'],['marion','Marion','new basement'],['marshall','Marshall','pop-top addition'],['pearl','Pearl St','primary bathroom'],['york','York','large home addition']]){

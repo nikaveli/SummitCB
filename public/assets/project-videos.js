@@ -63,3 +63,33 @@ addEventListener('scroll',scheduleFocus,{passive:true});
 addEventListener('resize',scheduleFocus,{passive:true});
 finePointer.addEventListener?.('change',()=>{films.forEach(root=>setLabel(root.querySelector('.project-film-media'),idleLabel()));scheduleFocus();});
 reducedMotion.addEventListener?.('change',()=>{if(!allowsAutomaticPlayback())unload(active);films.forEach(root=>setLabel(root.querySelector('.project-film-media'),idleLabel()));scheduleFocus();});
+
+const initProjectScale=()=>{
+  const {gsap,ScrollTrigger,Flip}=window;
+  const scopes=[...document.querySelectorAll('[data-project-scale]')];
+  if(!gsap||!ScrollTrigger||!Flip||!scopes.length||reducedMotion.matches)return;
+  gsap.registerPlugin(ScrollTrigger,Flip);
+  document.documentElement.classList.add('has-project-flip');
+  let timelines=[];
+  const build=()=>{
+    timelines.forEach(timeline=>{timeline.scrollTrigger?.kill();timeline.kill();});
+    timelines=[];
+    scopes.forEach(scope=>{
+      const wrappers=[...scope.querySelectorAll('[data-flip-element="wrapper"]')];
+      const target=scope.querySelector('[data-flip-element="target"]');
+      if(wrappers.length<2||!target)return;
+      gsap.set(target,{clearProps:'transform,width,height'});
+      const first=wrappers[0],last=wrappers.at(-1);
+      const firstRect=first.getBoundingClientRect(),lastRect=last.getBoundingClientRect();
+      const distance=Math.max(1,lastRect.top+scrollY+last.offsetHeight/2-(firstRect.top+scrollY+first.offsetHeight/2));
+      const timeline=gsap.timeline({scrollTrigger:{trigger:first,start:'center center',endTrigger:last,end:'center center',scrub:.25,invalidateOnRefresh:true}});
+      timeline.add(Flip.fit(target,last,{duration:distance,ease:'none'}));
+      timelines.push(timeline);
+    });
+    ScrollTrigger.sort();ScrollTrigger.refresh();scheduleFocus();
+  };
+  requestAnimationFrame(build);
+  let resizeTimer;
+  addEventListener('resize',()=>{clearTimeout(resizeTimer);resizeTimer=setTimeout(build,120);},{passive:true});
+};
+document.readyState==='complete'?initProjectScale():addEventListener('load',initProjectScale,{once:true});

@@ -26,6 +26,13 @@ try{
   const widths=await desktop.page.locator('.project-film-media').evaluateAll(items=>items.map(item=>Math.round(item.getBoundingClientRect().width)));
   assert.equal(new Set(widths).size,1,'every project video must use the same width');
   const first=desktop.page.locator('[data-project-film="64th"] .project-film-media');
+  const compactSlot=desktop.page.locator('[data-project-film="64th"] .project-film-scale-slot--compact');
+  const wideSlot=desktop.page.locator('[data-project-film="64th"] .project-film-scale-slot--wide');
+  await compactSlot.evaluate(element=>scrollTo(0,scrollY+element.getBoundingClientRect().top+element.offsetHeight/2-innerHeight/2));await desktop.page.waitForTimeout(350);
+  const compactWidth=(await first.boundingBox()).width;
+  await wideSlot.evaluate(element=>scrollTo(0,scrollY+element.getBoundingClientRect().top+element.offsetHeight/2-innerHeight/2));await desktop.page.waitForTimeout(450);
+  const expandedWidth=(await first.boundingBox()).width,wideWidth=(await wideSlot.boundingBox()).width;
+  assert.ok(expandedWidth>compactWidth*1.5);assert.ok(Math.abs(expandedWidth-wideWidth)<5);
   await first.hover();await desktop.page.waitForFunction(()=>document.querySelector('[data-project-film="64th"] video').currentTime>.15);
   assert.ok(desktop.requests.every(url=>url.includes('-720-')));assert.equal(await first.getAttribute('aria-label'),'Pause Puspa project video');
   assert.equal(await first.locator('video').evaluate(video=>getComputedStyle(video).opacity),'1');
@@ -47,6 +54,7 @@ try{
   assert.equal(await mobile.page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1),false);assert.deepEqual(mobile.errors,[]);await mobile.context.close();
 
   const reduced=await setup({reducedMotion:'reduce'});await reduced.page.goto(base+paths.projects);
+  assert.equal(await reduced.page.locator('html.has-project-flip').count(),0);
   const reducedFilm=reduced.page.locator('[data-project-film="64th"] .project-film-media');await reducedFilm.hover();await reduced.page.waitForTimeout(500);assert.equal(reduced.requests.length,0);
   await reducedFilm.click();await reduced.page.waitForFunction(()=>document.querySelector('[data-project-film="64th"] video').currentTime>.15);assert.equal(reduced.requests.length,1);await reduced.context.close();
   console.log('projects: 14 named sections, York group, equal sizing, hover, touch and reduced-motion playback passed');

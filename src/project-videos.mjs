@@ -5,13 +5,18 @@ import { projectVideoAssets } from './project-video-assets.mjs';
 const film = (clip,showTitle) => {
   const asset=projectVideoAssets[clip.id];
   if(!asset)throw new Error(`Missing prepared project video: ${clip.id}`);
-  return `<figure class="project-film-card" data-project-film="${e(clip.id)}">
+  return `<figure class="project-film-card" data-project-film="${e(clip.id)}" data-project-scale>
     ${showTitle?`<figcaption><h3>${e(clip.title)}</h3></figcaption>`:''}
-    <a class="project-film-media" href="${asset[720].url}" data-small="${asset[480].url}" data-large="${asset[720].url}" aria-label="Play ${e(clip.title)} project video">
-      <picture class="project-film-poster"><img src="${asset.poster.url}" width="1280" height="720" loading="lazy" decoding="async" alt="Still frame from the ${e(clip.title)} project video"></picture>
-      <video width="1280" height="720" muted playsinline loop preload="none" aria-hidden="true"></video>
-      <span class="project-film-action" aria-hidden="true"><span class="project-film-icon">▶</span><span class="project-film-action-label">Hover to play</span></span>
-    </a>
+    <div class="project-film-scale">
+      <div class="project-film-scale-slot project-film-scale-slot--compact" data-flip-element="wrapper">
+        <a class="project-film-media" data-flip-element="target" href="${asset[720].url}" data-small="${asset[480].url}" data-large="${asset[720].url}" aria-label="Play ${e(clip.title)} project video">
+          <picture class="project-film-poster"><img src="${asset.poster.url}" width="1280" height="720" loading="lazy" decoding="async" alt="Still frame from the ${e(clip.title)} project video"></picture>
+          <video width="1280" height="720" muted playsinline loop preload="none" aria-hidden="true"></video>
+          <span class="project-film-action" aria-hidden="true"><span class="project-film-icon">▶</span><span class="project-film-action-label">Hover to play</span></span>
+        </a>
+      </div>
+      <div class="project-film-scale-slot project-film-scale-slot--wide" data-flip-element="wrapper" aria-hidden="true"></div>
+    </div>
   </figure>`;
 };
 

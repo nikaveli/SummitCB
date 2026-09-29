@@ -82,8 +82,8 @@ for(const row of migration)if(row.status===301)row.to=redirects[row.from];
 
 await rm(dist,{recursive:true,force:true});await mkdir(dist,{recursive:true});await cp(path.join(root,'public'),dist,{recursive:true});
 const assetRevisions={};
-for(const name of ['site.css','site.js','motion.js','section-scroll.css','section-scroll.js','gsap.min.js','scroll-trigger.min.js','split-text.min.js','scroll-hero/hero.css','scroll-hero/scrub-engine.js','scroll-hero/hero.js'])assetRevisions['/assets/'+name]=createHash('sha256').update(await readFile(path.join(dist,'assets',name))).digest('hex').slice(0,12);
-const revise=html=>html.replace(/(href|src)="(\/assets\/(?:site\.css|site\.js|motion\.js|section-scroll\.(?:css|js)|gsap\.min\.js|scroll-trigger\.min\.js|split-text\.min\.js|scroll-hero\/(?:hero\.css|scrub-engine\.js|hero\.js)))"/g,(_,attr,url)=>`${attr}="${url}?v=${assetRevisions[url]}"`);
+for(const name of ['site.css','site.js','motion.js','section-scroll.css','section-scroll.js','gsap.min.js','scroll-trigger.min.js','flip.min.js','split-text.min.js','scroll-hero/hero.css','scroll-hero/scrub-engine.js','scroll-hero/hero.js'])assetRevisions['/assets/'+name]=createHash('sha256').update(await readFile(path.join(dist,'assets',name))).digest('hex').slice(0,12);
+const revise=html=>html.replace(/(href|src)="(\/assets\/(?:site\.css|site\.js|motion\.js|section-scroll\.(?:css|js)|gsap\.min\.js|scroll-trigger\.min\.js|flip\.min\.js|split-text\.min\.js|scroll-hero\/(?:hero\.css|scrub-engine\.js|hero\.js)))"/g,(_,attr,url)=>`${attr}="${url}?v=${assetRevisions[url]}"`);
 for(const {page,html} of results) {
   const dir=path.join(dist,page.path);await mkdir(dir,{recursive:true});await writeFile(path.join(dir,'index.html'),revise(html));
 }
